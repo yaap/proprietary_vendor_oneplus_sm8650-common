@@ -12,7 +12,7 @@ service vendor.touch-aidl-1  /odm/bin/hw/vendor-oplus-hardware-touch-V2-service
     group root system gps radio inet sdcard_r sdcard_rw inet
     socket hidl2touchdaemon_client dgram 0660 root inet
     socket hidl2touchdaemon_server dgram 0660 root inet
-    interface aidl vendor.oplus.hardware.touch.IOplusTouch/oplus
+    interface aidl vendor.oplus.hardware.touch.IOplusTouch/default
 
 
 on boot

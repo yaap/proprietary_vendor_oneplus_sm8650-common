@@ -26245,7 +26245,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff"],
-			shared_libs: ["libdmabufheap", "vendor.oplus.hardware.performance-V1-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "libosenseaidlhalclient", "libolc_vnd", "vendor.oplus.hardware.commondcs-V1-ndk", "vendor.oplus.hardware.touch-V1-ndk", "android.hardware.biometrics.fingerprint-V3-ndk", "android.hardware.biometrics.common-V3-ndk", "libbinder", "liblog", "libhidlbase", "libhidltransport", "libcutils", "libbinder_ndk", "libQSEEComAPI", "libion", "libbase", "libsensorndkbridge", "libhardware", "libutils", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libshims_aidl_fingerprint_v3.oplus", "libdmabufheap", "vendor.oplus.hardware.performance-V1-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "libosenseaidlhalclient", "libolc_vnd", "vendor.oplus.hardware.commondcs-V1-ndk", "vendor.oplus.hardware.touch-V1-ndk", "android.hardware.biometrics.fingerprint-V3-ndk", "android.hardware.biometrics.common-V3-ndk", "libbinder", "liblog", "libhidlbase", "libhidltransport", "libcutils", "libbinder_ndk", "libQSEEComAPI", "libion", "libbase", "libsensorndkbridge", "libhardware", "libutils", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
