@@ -25276,26 +25276,10 @@ sh_binary {
 }
 
 sh_binary {
-	name: "init.kernel.post_boot",
-	owner: "oneplus",
-	src: "proprietary/vendor/bin/init.kernel.post_boot.sh",
-	filename: "init.kernel.post_boot.sh",
-	soc_specific: true,
-}
-
-sh_binary {
 	name: "init.qcom.class_core",
 	owner: "oneplus",
 	src: "proprietary/vendor/bin/init.qcom.class_core.sh",
 	filename: "init.qcom.class_core.sh",
-	soc_specific: true,
-}
-
-sh_binary {
-	name: "init.qcom.post_boot",
-	owner: "oneplus",
-	src: "proprietary/vendor/bin/init.qcom.post_boot.sh",
-	filename: "init.qcom.post_boot.sh",
 	soc_specific: true,
 }
 

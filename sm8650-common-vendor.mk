@@ -3327,9 +3327,7 @@ PRODUCT_PACKAGES += \
     init.kernel.post_boot-pineapple_2_3_1_1 \
     init.kernel.post_boot-pineapple_2_3_2_0 \
     init.kernel.post_boot-pineapple_default_2_3_2_1 \
-    init.kernel.post_boot \
     init.qcom.class_core \
-    init.qcom.post_boot \
     init.qcom.sensors \
     init.qti.graphics \
     init.qti.kernel \
