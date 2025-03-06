@@ -82,6 +82,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/dng/ToneCurve_imx581.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/dng/ToneCurve_imx581.txt \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/dng/ToneCurve_lyt808.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/dng/ToneCurve_lyt808.txt \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/dng/ToneCurve_ov64b40_tele.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/dng/ToneCurve_ov64b40_tele.txt \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/eeprom_ov64b40_sem1217s.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/eeprom_ov64b40_sem1217s.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/eis_camera.vcfg:$(TARGET_COPY_OUT_ODM)/etc/camera/eis_camera.vcfg \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/facesr_hd_composite_ff_ref_4.3.19_qcom8650_qnn_segqnn_qualitybin.model:$(TARGET_COPY_OUT_ODM)/etc/camera/facesr_hd_composite_ff_ref_4.3.19_qcom8650_qnn_segqnn_qualitybin.model \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/fb_default:$(TARGET_COPY_OUT_ODM)/etc/camera/fb_default \
@@ -250,6 +251,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/ByYo3If:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/ByYo3If \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/BycYf7WWz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/BycYf7WWz \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/Cold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Cold.cube.rgb.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/DL_A_MoneyBall.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_A_MoneyBall.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/DL_B_Inception.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_B_Inception.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/DL_C_R3_80.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_C_R3_80.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/DL_D_G4.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_D_G4.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/DL_L_B6.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/DL_L_B6.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/Delta400.3dl.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/Delta400.3dl.rgb.bin \
@@ -314,6 +318,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/filters_lut/ByYo3If:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/filters_lut/ByYo3If \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/filters_lut/BycYf7WWz:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/filters_lut/BycYf7WWz \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/filters_lut/Cold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/filters_lut/Cold.cube.rgb.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/filters_lut/DL_A_MoneyBall.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/filters_lut/DL_A_MoneyBall.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/filters_lut/DL_B_Inception.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/filters_lut/DL_B_Inception.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/filters_lut/DL_C_R3_80.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/filters_lut/DL_C_R3_80.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/filters_lut/DL_D_G4.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/filters_lut/DL_D_G4.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/filters_lut/DL_L_B6.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/filters_lut/DL_L_B6.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/filters_lut/filters_lut/Emerald.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/filters_lut/Emerald.cube.rgb.bin \
@@ -614,8 +621,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/meicam.child.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/meicam.child.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/mono.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/mono.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/morandi.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/morandi.cube.rgb.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/morning.dream.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/morning.dream.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/natural.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/natural.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/neon-2020.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/neon-2020.cube.rgb.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/nostalgic.scene.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/nostalgic.scene.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/oplus-black-gold.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/oplus-black-gold.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/oplus-cyberpunk.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/oplus-cyberpunk.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/oplus-nightcity.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/oplus-nightcity.cube.rgb.bin \
@@ -1041,6 +1050,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/wide_inv_padding_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide_inv_padding_mapxy_33x25.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/wide_padding_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide_padding_mapxy_33x25.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/charge.cfg:$(TARGET_COPY_OUT_ODM)/etc/charge.cfg \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/displaycolorfeaturecfg.xml:$(TARGET_COPY_OUT_ODM)/etc/displaycolorfeaturecfg.xml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/dolby/display/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/display/dolby_vision.cfg \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/dolby/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/dolby_vision.cfg \
@@ -1052,7 +1062,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
-    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V5-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V5-service.rc \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V6-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V6-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc \
@@ -1065,6 +1075,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/permissions/android.hardware.context_hub.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.context_hub.xml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-charger.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-charger.xml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/uah/uahconfig.pb:$(TARGET_COPY_OUT_ODM)/etc/uah/uahconfig.pb \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/virtualcamera.json:$(TARGET_COPY_OUT_ODM)/etc/virtualcamera.json \
     vendor/oneplus/sm8650-common/proprietary/odm/firmware/fastchg/22877/bms_heating_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22877/bms_heating_config.txt \
     vendor/oneplus/sm8650-common/proprietary/odm/firmware/fastchg/22877/charging_hyper_mode_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22877/charging_hyper_mode_config.txt \
@@ -1714,7 +1725,8 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/vendor/lib64/camera/imx709_3.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx709_3.pb \
     vendor/oneplus/sm8650-common/proprietary/vendor/lib64/camera/imx809_3.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx809_3.pb \
     vendor/oneplus/sm8650-common/proprietary/vendor/lib64/camera/s5k3p9_2.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/s5k3p9_2.pb \
-    vendor/oneplus/sm8650-common/proprietary/vendor/lib64/camera/s5k3p9_3.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/s5k3p9_3.pb
+    vendor/oneplus/sm8650-common/proprietary/vendor/lib64/camera/s5k3p9_3.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/s5k3p9_3.pb \
+    vendor/oneplus/sm8650-common/proprietary/vendor/lib64/libpnc_cl_program.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/libpnc_cl_program.bin
 
 PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
@@ -1803,6 +1815,7 @@ PRODUCT_PACKAGES += \
     com.qti.node.swlsc \
     com.qti.node.swmctf \
     com.qti.node.swpdpc \
+    com.qti.node.swpnc \
     com.qti.node.swpreprocess \
     com.qti.node.swregistration \
     com.qti.node.swvrt \
@@ -2162,6 +2175,7 @@ PRODUCT_PACKAGES += \
     libmmcamera_mfnr \
     libmmcamera_mfnr_t4 \
     libmmcamera_pdpc \
+    libmmcamera_pnc \
     libmmosal_vendor \
     libmmrtpdecoder_vendor \
     libmmrtpencoder_vendor \
@@ -2474,7 +2488,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk_vendor \
     vendor.oplus.hardware.ims-V1-ndk \
-    vendor.oplus.hardware.radio-V2-ndk_platform \
+    vendor.oplus.hardware.radio-V2-ndk \
     vendor.oplus.hardware.stability.oplus_project-V1-ndk \
     vendor.pixelworks.hardware.display@1.0_vendor \
     vendor.pixelworks.hardware.display@1.1_vendor \
@@ -2829,9 +2843,7 @@ PRODUCT_PACKAGES += \
     libVDBayerHDR \
     libVDBlurless \
     libVDExternal \
-    libVDPostureDetection \
     libVDSuperPhotoAPI \
-    libVDUpScale \
     libWaterMark \
     libXDocProcessSDK \
     libYTCommon \
@@ -2987,6 +2999,7 @@ PRODUCT_PACKAGES += \
     libtriplecam_image_optical_zoom \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
+    libuahcore \
     liburcccore \
     libvega_common \
     libvega_face \
@@ -2999,7 +3012,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.camera_rfi-V1-ndk \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cammidasservice-V1-ndk \
-    vendor.oplus.hardware.charger-V5-ndk \
+    vendor.oplus.hardware.charger-V6-ndk \
     vendor.oplus.hardware.charger@1.0 \
     vendor.oplus.hardware.communicationcenter-V1-ndk \
     vendor.oplus.hardware.communicationcenter-V2-ndk \
@@ -3059,6 +3072,8 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     uimgbaservice \
+    uimremoteclient \
+    uimremoteserver \
     EuiccGoogle \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
@@ -3073,13 +3088,15 @@ PRODUCT_PACKAGES += \
     com.android.hotwordenrollment.common.util \
     uimgbalibrary \
     uimgbamanagerlibrary \
+    uimremoteclientlibrary \
+    uimremoteserverlibrary \
     uimservicelibrary \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
     sts-osdk-plugin \
     vendor.oplus.hardware.charger-V1-java \
-    vendor.oplus.hardware.charger-V5-java \
+    vendor.oplus.hardware.charger-V6-java \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \
     vendor.qti.ims.datachannelservice-V1-java \
@@ -3404,7 +3421,7 @@ PRODUCT_PACKAGES += \
     vendor-oplus-hardware-touch-V2-service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.cammidasservice-V1-service \
-    vendor.oplus.hardware.charger-V5-service \
+    vendor.oplus.hardware.charger-V6-service \
     vendor.oplus.hardware.displaypanelfeature-service \
     vendor.oplus.hardware.stability.oplus_project-V1-service \
     vendor.pixelworks.hardware.feature-service \

@@ -49,6 +49,10 @@ fallback_setting()
 	done
 }
 
+#because the next action to execute the init.kernel.post_boo-pineapple_xxxx.sh maybe failed,so we
+#set the correct sleep mode here
+echo s2idle > /sys/power/mem_sleep
+
 variant=$(get_num_logical_cores_in_physical_cluster "$1")
 echo "CPU topology: ${variant}"
 case "$variant" in

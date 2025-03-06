@@ -25,7 +25,6 @@ on early-boot
     write /sys/kernel/tracing/events/sde/enable 1
 
 service displaypanelfeature-service /odm/bin/hw/vendor.oplus.hardware.displaypanelfeature-service
-    setenv JE_MALLOC_ZERO_FILLING 1
     class hal animation
     user system
     group system
