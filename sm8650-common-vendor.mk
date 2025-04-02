@@ -3341,7 +3341,6 @@ PRODUCT_PACKAGES += \
     ims_rtp_daemon \
     imsdaemon \
     init.kernel.post_boot-memory \
-    init.kernel.post_boot-pineapple \
     init.kernel.post_boot-pineapple_2_3_1_1 \
     init.kernel.post_boot-pineapple_2_3_2_0 \
     init.kernel.post_boot-pineapple_default_2_3_2_1 \

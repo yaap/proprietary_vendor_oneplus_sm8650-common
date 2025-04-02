@@ -25064,14 +25064,6 @@ sh_binary {
 }
 
 sh_binary {
-	name: "init.kernel.post_boot-pineapple",
-	owner: "oneplus",
-	src: "proprietary/vendor/bin/init.kernel.post_boot-pineapple.sh",
-	filename: "init.kernel.post_boot-pineapple.sh",
-	soc_specific: true,
-}
-
-sh_binary {
 	name: "init.kernel.post_boot-pineapple_2_3_1_1",
 	owner: "oneplus",
 	src: "proprietary/vendor/bin/init.kernel.post_boot-pineapple_2_3_1_1.sh",
