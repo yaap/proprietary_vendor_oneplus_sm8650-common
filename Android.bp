@@ -26012,6 +26012,23 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
+	name: "commcenterd",
+	owner: "oneplus",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/bin/commcenterd"],
+			shared_libs: ["vendor.oplus.hardware.communicationcenter-V2-ndk", "libcutils", "liblog", "libutils", "libcommcenterutils", "libcommcenterfw", "libbinder_ndk", "libdmtp", "libprotobuf-cpp-lite-21.7", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_binary {
 	name: "cwb_utils_aidl",
 	owner: "oneplus",
 	target: {
