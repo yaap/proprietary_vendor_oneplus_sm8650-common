@@ -3108,7 +3108,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so"],
-			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "libdiag", "libqmi_cci", "libbtnv", "android.hardware.bluetooth@1.0", "libsoc_helper", "libminksocket_vendor", "libPeripheralStateUtils", "libbinder_ndk", "vendor.oplus.hardware.stability.oplus_project-V1-ndk", "libqmiservices", "libchrome", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "libdiag", "libqmi_cci", "libbtnv", "android.hardware.bluetooth@1.0", "libsoc_helper", "libminksocket_vendor", "libPeripheralStateUtils", "libbinder_ndk", "vendor.oplus.hardware.stability.oplus_project-V1-ndk", "libqmiservices", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -3126,7 +3126,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so"],
-			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "libdiag", "libqmi_cci", "libbtnv", "android.hardware.bluetooth@1.0", "android.hardware.bluetooth@1.1", "android.hardware.bluetooth@1.0-impl-qti", "libsoc_helper", "libchrome", "libqmiservices", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "libdiag", "libqmi_cci", "libbtnv", "android.hardware.bluetooth@1.0", "android.hardware.bluetooth@1.1", "android.hardware.bluetooth@1.0-impl-qti", "libsoc_helper", "libqmiservices", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
