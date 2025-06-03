@@ -4116,7 +4116,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libQtiRilLoadable.so"],
-			shared_libs: ["libqcrilNrLogger", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libqcrilNrLogger", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8162,23 +8162,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libnspsuperresolutionserviceextension",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libnspsuperresolutionserviceextension.so"],
-			shared_libs: ["liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libnsptransaction",
 	owner: "oneplus",
 	strip: {
@@ -8921,7 +8904,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcrilDataModule.so"],
-			shared_libs: ["android.hardware.radio@1.6", "vendor.qti.hardware.data.iwlandata-V1-ndk", "vendor.qti.hardware.data.connectionaidl-V1-ndk", "libqdpr", "libdsi_netctrl", "liblog", "libcutils", "libbase", "libutils", "libbinder_ndk", "libqcrilNrFramework", "libqcrilNrLogger", "libril-db", "libqcrilNrQtiBus", "libqcrilNrQtiMutex", "qcrilNrQmiModule", "qtiril-utils", "libqmi_cci", "libqmi_client_qmux", "libqmi_client_helper", "libqmiservices", "libdsutils", "libhidlbase", "libhardware_legacy", "qtiwakelock", "android.hardware.radio-V2-ndk", "android.hardware.radio.data-V2-ndk", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["vendor.qti.hardware.data.iwlandata-V1-ndk", "android.hardware.radio@1.6", "vendor.qti.hardware.data.connectionaidl-V1-ndk", "libqdpr", "libdsi_netctrl", "liblog", "libcutils", "libbase", "libutils", "libbinder_ndk", "libqcrilNrFramework", "libqcrilNrLogger", "libril-db", "libqcrilNrQtiBus", "libqcrilNrQtiMutex", "qcrilNrQmiModule", "qtiril-utils", "libqmi_cci", "libqmi_client_qmux", "libqmi_client_helper", "libqmiservices", "libdsutils", "libhidlbase", "libhardware_legacy", "qtiwakelock", "android.hardware.radio-V2-ndk", "android.hardware.radio.data-V2-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8938,7 +8921,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcrilNr.so"],
-			shared_libs: ["vendor.oplus.hardware.appradioaidl-V1-ndk", "vendor.oplus.hardware.ims-V1-ndk", "vendor.oplus.hardware.radio-V2-ndk", "libcommcenterutils", "libcommcenterfw", "libutils", "libbinder_ndk", "liblog", "libdmtpclient", "lib-virtual-modem-protos", "vendor.oplus.hardware.communicationcenter-V2-ndk", "qcrilInterfaces", "libhidlbase", "libqcrilNrFramework", "libqms_client", "libcutils", "qcrild_libqcrilnrutils", "libqmi_cci", "libqmi_client_qmux", "libdiag", "libhardware_legacy", "libqmiservices", "librilqmimiscservices", "libqmi_client_helper", "libidl", "libsqlite", "libbinder", "libmdmdetect", "libperipheral_client", "libqcrilNrLogger", "libqcrilNrQtiMutex", "libprotobuf-cpp-full-21.7", "libvndksupport", "libbase", "libz", "libconfigdb", "libxml", "libqcrilNrQtiBus", "qtiwakelock", "qtiril-utils", "qcrilMarshal", "libril-db", "libril-legacy", "qcrilNrQmiModule", "libQtiRilLoadable", "qtiPeripheralMgr", "vendor.qti.hardware.radio.ims-V12-ndk", "vendor.qti.hardware.radio.qtiradio-V11-ndk", "vendor.qti.hardware.radio.am-V1-ndk", "vendor.qti.hardware.radio.qcrilhook-V1-ndk", "qcrilNr_aidl_common", "qcrilNr_aidl_IRadioConfig", "qcrilNr_aidl_IRadioMessaging", "qcrilNr_aidl_IRadioModem", "qcrilNr_aidl_IRadioNetwork", "qcrilNr_aidl_IRadioSim", "qcrilNr_aidl_IRadioVoice", "qcrilNr_aidl_IQtiRadioConfig", "qcrilNr_aidl_UimRemoteServer", "qcrilNr_aidl_UimRemoteClient", "qcrilNr_aidl_UimLpaService", "qcrilNr_aidl_UimService", "qcrilNr_aidl_IRadioSap", "qcrilNr_aidl_SecureElementService", "qcrilNrSecureMode", "libsystem_health_mon", "libxml2", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["qcrilInterfaces", "libhidlbase", "libqcrilNrFramework", "libcutils", "liblog", "libutils", "qcrild_libqcrilnrutils", "libqmi_cci", "libqmi_client_qmux", "libdiag", "libhardware_legacy", "libqmiservices", "librilqmimiscservices", "libqmi_client_helper", "libidl", "libsqlite", "libbinder", "libmdmdetect", "libperipheral_client", "libqcrilNrLogger", "libqcrilNrQtiMutex", "libprotobuf-cpp-full-21.7", "libvndksupport", "libbase", "libz", "libconfigdb", "libxml", "libqcrilNrQtiBus", "qtiwakelock", "qtiril-utils", "qcrilMarshal", "libril-db", "libril-legacy", "qcrilNrQmiModule", "libQtiRilLoadable", "libbinder_ndk", "qtiPeripheralMgr", "vendor.qti.hardware.radio.ims-V12-ndk", "vendor.qti.hardware.radio.qtiradio-V11-ndk", "vendor.qti.hardware.radio.am-V1-ndk", "vendor.qti.hardware.radio.qcrilhook-V1-ndk", "qcrilNr_aidl_common", "qcrilNr_aidl_IRadioConfig", "qcrilNr_aidl_IRadioMessaging", "qcrilNr_aidl_IRadioModem", "qcrilNr_aidl_IRadioNetwork", "qcrilNr_aidl_IRadioSim", "qcrilNr_aidl_IRadioVoice", "qcrilNr_aidl_IQtiRadioConfig", "qcrilNr_aidl_UimRemoteServer", "qcrilNr_aidl_UimRemoteClient", "qcrilNr_aidl_UimLpaService", "qcrilNr_aidl_UimService", "qcrilNr_aidl_IRadioSap", "qcrilNr_aidl_SecureElementService", "qcrilNrSecureMode", "libsystem_health_mon", "libxml2", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8955,7 +8938,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcrilNrCellInfoModule.so"],
-			shared_libs: ["libqcrilNrQtiMutex", "libQtiRilLoadable", "libqcrilNrFramework", "libqcrilNrLogger", "qcrilNrQmiModule", "libqcrilNr", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["libqcrilNrQtiMutex", "libQtiRilLoadable", "libqcrilNrFramework", "libqcrilNrLogger", "qcrilNrQmiModule", "libqcrilNr", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8989,7 +8972,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcrilNrImsModule.so"],
-			shared_libs: ["libcutils", "libqcrilNrQtiMutex", "libqcrilNrLogger", "libqcrilNrFramework", "libril-db", "qtiril-utils", "qcrilNrQmiModule", "libril-legacy", "libQtiRilLoadable", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["libcutils", "libqcrilNrQtiMutex", "libqcrilNrLogger", "libqcrilNrFramework", "libril-db", "qtiril-utils", "qcrilNrQmiModule", "libril-legacy", "libQtiRilLoadable", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9023,7 +9006,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcrilNrPbmModule.so"],
-			shared_libs: ["libqcrilNrQtiMutex", "libdiag", "qcrilNrQmiModule", "libqcrilNrLogger", "libqcrilNrFramework", "qtiril-utils", "liblog", "libcutils", "libQtiRilLoadable", "libqcrilNrQtiBus", "libril-legacy", "qcrilIntermodulemsgs", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["libqcrilNrQtiMutex", "libdiag", "qcrilNrQmiModule", "libqcrilNrLogger", "libqcrilNrFramework", "qtiril-utils", "liblog", "libcutils", "libQtiRilLoadable", "libqcrilNrQtiBus", "libril-legacy", "qcrilIntermodulemsgs", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9074,7 +9057,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcrilNrSmsModule.so"],
-			shared_libs: ["qcrilInterfaces", "libqmi_cci", "libqmi_encdec", "libqmi_client_qmux", "libdiag", "libhardware_legacy", "libqmiservices", "librilqmimiscservices", "libqmi_client_helper", "libcutils", "liblog", "libutils", "libbase", "libsqlite", "qtiril-utils", "libqcrilNrQtiMutex", "libqcrilNrFramework", "libqcrilNrLogger", "qcrilNrQmiModule", "libril-db", "libQtiRilLoadable", "libril-legacy", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["qcrilInterfaces", "libqmi_cci", "libqmi_encdec", "libqmi_client_qmux", "libdiag", "libhardware_legacy", "libqmiservices", "librilqmimiscservices", "libqmi_client_helper", "libcutils", "liblog", "libutils", "libbase", "libsqlite", "qtiril-utils", "libqcrilNrQtiMutex", "libqcrilNrFramework", "libqcrilNrLogger", "qcrilNrQmiModule", "libril-db", "libQtiRilLoadable", "libril-legacy", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9108,7 +9091,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcrilNrVoiceModule.so"],
-			shared_libs: ["libcutils", "libsqlite", "libqcrilNrQtiMutex", "libqcrilNrLogger", "libqcrilNrFramework", "libril-db", "libril-legacy", "qtiril-utils", "libqcrilNrQtiBus", "qtiwakelock", "qcrilNrQmiModule", "libQtiRilLoadable", "qcrilIntermodulemsgs", "qcrilInterfaces", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["libcutils", "libsqlite", "libqcrilNrQtiMutex", "libqcrilNrLogger", "libqcrilNrFramework", "libril-db", "libril-legacy", "qtiril-utils", "libqcrilNrQtiBus", "qtiwakelock", "qcrilNrQmiModule", "libQtiRilLoadable", "qcrilIntermodulemsgs", "qcrilInterfaces", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -10009,7 +9992,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libril-legacy.so"],
-			shared_libs: ["libpdmapper", "libpdnotifier", "libqcrilNrLogger", "libcutils", "qtiPeripheralMgr", "libqcrilNrQtiMutex", "qtiril-utils", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["libpdmapper", "libpdnotifier", "libqcrilNrLogger", "libcutils", "qtiPeripheralMgr", "libqcrilNrQtiMutex", "qtiril-utils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -12272,7 +12255,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/qcril_client.so"],
-			shared_libs: ["qcrilMarshal", "qcrild_libqcrilnrutils", "libqcrilNrLogger", "qcrilInterfaces", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["qcrilMarshal", "qcrild_libqcrilnrutils", "libqcrilNrLogger", "qcrilInterfaces", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -12289,7 +12272,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/qcrild_libqcrilnr.so"],
-			shared_libs: ["liblog", "libutils", "libcutils", "qcrild_libqcrilnrutils", "libqcrilNrFramework", "libqcrilNrLogger", "libqcrilNrQtiMutex", "qtiwakelock", "qcrilMarshal", "libQtiRilLoadable", "libril-legacy", "libqcrilNr", "qcrilInterfaces", "libril-db", "libbinder_ndk", "libbase", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libutils", "libcutils", "qcrild_libqcrilnrutils", "libqcrilNrFramework", "libqcrilNrLogger", "libqcrilNrQtiMutex", "qtiwakelock", "qcrilMarshal", "libQtiRilLoadable", "libril-legacy", "libqcrilNr", "qcrilInterfaces", "libril-db", "libbinder_ndk", "libbase", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -12306,7 +12289,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/qcrild_libqcrilnrutils.so"],
-			shared_libs: ["libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -12340,7 +12323,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/qtiPeripheralMgr.so"],
-			shared_libs: ["libqcrilNrQtiMutex", "liblog", "libmdmdetect", "libqcrilNrLogger", "libperipheral_client", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["libqcrilNrQtiMutex", "liblog", "libmdmdetect", "libqcrilNrLogger", "libperipheral_client", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -12746,23 +12729,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.appradioaidl-V1-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.oplus.hardware.appradioaidl-V1-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.oplus.hardware.camera.aon-V1-ndk_platform",
 	owner: "oneplus",
 	strip: {
@@ -12867,24 +12833,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.communicationcenter-V2-ndk_vendor",
-	stem: "vendor.oplus.hardware.communicationcenter-V2-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.oplus.hardware.cwb-V1-ndk",
 	owner: "oneplus",
 	strip: {
@@ -12963,23 +12911,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.oplus.hardware.ims-V1-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.radio-V2-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.oplus.hardware.radio-V2-ndk.so"],
 			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -17492,23 +17423,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "lib-virtual-modem-protos",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/lib-virtual-modem-protos.so"],
-			shared_libs: ["libprotobuf-cpp-lite-21.7", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "lib2DSlender",
 	owner: "oneplus",
 	strip: {
@@ -20013,40 +19927,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libcommcenterfw",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libcommcenterfw.so"],
-			shared_libs: ["libcommcenterutils", "libcutils", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libcommcenterutils",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libcommcenterutils.so"],
-			shared_libs: ["libcutils", "liblog", "libutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libcreatebin",
 	owner: "oneplus",
 	strip: {
@@ -20124,57 +20004,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libdisplayfossfeature_nature.so"],
 			shared_libs: ["liblog", "libcutils", "libutils", "libbinder", "libbinder_ndk", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdmtp-protos-lite",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libdmtp-protos-lite.so"],
-			shared_libs: ["libprotobuf-cpp-lite-21.7", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdmtp",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libdmtp.so"],
-			shared_libs: ["vendor.oplus.hardware.communicationcenter-V2-ndk", "libcommcenterutils", "libcutils", "liblog", "libutils", "libcommcenterfw", "libbinder_ndk", "libprotobuf-cpp-lite-21.7", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libdmtpclient",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libdmtpclient.so"],
-			shared_libs: ["vendor.oplus.hardware.communicationcenter-V2-ndk", "libcommcenterutils", "libcutils", "liblog", "libbinder_ndk", "libutils", "libprotobuf-cpp-lite-21.7", "libdmtp-protos-lite", "libcommcenterfw", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -21526,23 +21355,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.appradio@1.0",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.oplus.hardware.camera_rfi-V1-ndk",
 	owner: "oneplus",
 	strip: {
@@ -21620,40 +21432,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.charger@1.0.so"],
 			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.communicationcenter-V1-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.communicationcenter-V1-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.communicationcenter-V2-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.communicationcenter-V2-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -22621,13 +22399,6 @@ dex_import {
 	name: "qcrilhook",
 	owner: "oneplus",
 	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "sts-osdk-plugin",
-	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/sts-osdk-plugin.jar"],
 	system_ext_specific: true,
 }
 
@@ -24038,15 +23809,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "device_manifest_communication_center_aidl.xml",
-	owner: "oneplus",
-	src: "proprietary/odm/etc/vintf/manifest/device_manifest_communication_center_aidl.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	device_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "manifest_displaycolorfeature_aidl.xml",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_displaycolorfeature_aidl.xml",
@@ -24567,7 +24329,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/qcrilNrd"],
-			shared_libs: ["libcutils", "liblog", "libqcrilNr", "qtiwakelock", "libutils", "libavservices_minijail", "qcrild_libqcrilnr", "libbinder_ndk", "libc++", "libclang_rt.ubsan_standalone", "libc", "libm", "libdl", ],
+			shared_libs: ["libcutils", "liblog", "libqcrilNr", "qtiwakelock", "libutils", "libavservices_minijail", "qcrild_libqcrilnr", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -26009,23 +25771,6 @@ cc_prebuilt_binary {
 	},
 	prefer: true,
 	system_ext_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "commcenterd",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/bin/commcenterd"],
-			shared_libs: ["vendor.oplus.hardware.communicationcenter-V2-ndk", "libcutils", "liblog", "libutils", "libcommcenterutils", "libcommcenterfw", "libbinder_ndk", "libdmtp", "libprotobuf-cpp-lite-21.7", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	device_specific: true,
 }
 
 cc_prebuilt_binary {

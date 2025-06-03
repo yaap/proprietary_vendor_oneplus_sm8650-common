@@ -1056,7 +1056,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/dolby/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/dolby_vision.cfg \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/android.hardware.contexthub-service.qmi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.contexthub-service.qmi.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/android.hardware.secure_element-service.qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.secure_element-service.qti.rc \
-    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/commcenterd.rc:$(TARGET_COPY_OUT_ODM)/etc/init/commcenterd.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
@@ -1071,7 +1070,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
-    vendor/oneplus/sm8650-common/proprietary/odm/etc/oem_stx_platform_license.pfm:$(TARGET_COPY_OUT_ODM)/etc/oem_stx_platform_license.pfm \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/permissions/android.hardware.context_hub.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/android.hardware.context_hub.xml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-charger.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-charger.xml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
@@ -1179,10 +1177,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/ASR_binary/Whisper/libSnpeHtpV75Skel.so:$(TARGET_COPY_OUT_VENDOR)/etc/ASR_binary/Whisper/libSnpeHtpV75Skel.so \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/ASR_binary/Whisper/speech_float.eai:$(TARGET_COPY_OUT_VENDOR)/etc/ASR_binary/Whisper/speech_float.eai \
-    vendor/oneplus/sm8650-common/proprietary/vendor/etc/O_STX_platform_license.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/O_STX_platform_license.pfm \
-    vendor/oneplus/sm8650-common/proprietary/vendor/etc/O_TDD-Bypass_platform_license.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/O_TDD-Bypass_platform_license.pfm \
-    vendor/oneplus/sm8650-common/proprietary/vendor/etc/SDA_platform_license.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/SDA_platform_license.pfm \
-    vendor/oneplus/sm8650-common/proprietary/vendor/etc/SNS_platform_license.pfm:$(TARGET_COPY_OUT_VENDOR)/etc/SNS_platform_license.pfm \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__3.0.0_0.0__eai_2.10_enpu3.pmd \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__eai_2.10_enpu3.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__5.0.1_0.1__eai_2.10_enpu3.pmd \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/acdbdata/ffv_models/ffv__6.2.5_0.1__eai_3.4__enpu_v4.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/ffv_models/ffv__6.2.5_0.1__eai_3.4__enpu_v4.pmd \
@@ -2221,7 +2215,6 @@ PRODUCT_PACKAGES += \
     libnspresource \
     libnspscheduler \
     libnspsession \
-    libnspsuperresolutionserviceextension \
     libnsptransaction \
     libopencv \
     libopencv3a \
@@ -2490,20 +2483,17 @@ PRODUCT_PACKAGES += \
     vendor.libdpmframework \
     vendor.libdpmtcm \
     vendor.libmwqemiptablemgr \
-    vendor.oplus.hardware.appradioaidl-V1-ndk \
     vendor.oplus.hardware.camera.aon-V1-ndk_platform \
     vendor.oplus.hardware.camera.aon-service-impl \
     vendor.oplus.hardware.camera_rfi-V1-ndk_vendor \
     vendor.oplus.hardware.cammidasservice-V1-ndk_vendor \
     vendor.oplus.hardware.cammidasservice@1.0 \
     vendor.oplus.hardware.commondcs-V1-ndk_platform \
-    vendor.oplus.hardware.communicationcenter-V2-ndk_vendor \
     vendor.oplus.hardware.cwb-V1-ndk \
     vendor.oplus.hardware.cwb@1.0 \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk_vendor \
     vendor.oplus.hardware.ims-V1-ndk \
-    vendor.oplus.hardware.radio-V2-ndk \
     vendor.oplus.hardware.stability.oplus_project-V1-ndk \
     vendor.pixelworks.hardware.display@1.0_vendor \
     vendor.pixelworks.hardware.display@1.1_vendor \
@@ -2786,7 +2776,6 @@ PRODUCT_PACKAGES += \
     com.oplus.node.sstabphoto \
     com.oplus.node.sstabrealt \
     camera.oemlayer \
-    lib-virtual-modem-protos \
     lib2DSlender \
     libAF \
     libAIEngine \
@@ -2934,16 +2923,11 @@ PRODUCT_PACKAGES += \
     libcalculator \
     libcalculator_htp \
     libclstc_fod_color \
-    libcommcenterfw \
-    libcommcenterutils \
     libcreatebin \
     libcvface_api \
     libdisplayaidlapis \
     libdisplaycolorfeature \
     libdisplayfossfeature_nature \
-    libdmtp-protos-lite \
-    libdmtp \
-    libdmtpclient \
     libdolbyclstc \
     libdpaservice \
     libdualcam_optical_zoom_control \
@@ -3023,14 +3007,11 @@ PRODUCT_PACKAGES += \
     libyuv2 \
     libyuvwrapper \
     libzlib \
-    vendor.oplus.hardware.appradio@1.0 \
     vendor.oplus.hardware.camera_rfi-V1-ndk \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cammidasservice-V1-ndk \
     vendor.oplus.hardware.charger-V6-ndk \
     vendor.oplus.hardware.charger@1.0 \
-    vendor.oplus.hardware.communicationcenter-V1-ndk \
-    vendor.oplus.hardware.communicationcenter-V2-ndk \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk \
     vendor.oplus.hardware.olc2-V1-ndk \
@@ -3109,7 +3090,6 @@ PRODUCT_PACKAGES += \
     com.qti.dpmframework \
     dpmapi \
     qcrilhook \
-    sts-osdk-plugin \
     vendor.oplus.hardware.charger-V1-java \
     vendor.oplus.hardware.charger-V6-java \
     vendor.qti.ims.connection-V1.0-java \
@@ -3270,7 +3250,6 @@ PRODUCT_PACKAGES += \
     snapYUV420sp2RGBBinary \
     snapseparateYUV2RGBBinary \
     android.hardware.contexthub-service.qmi.xml \
-    device_manifest_communication_center_aidl.xml \
     manifest_displaycolorfeature_aidl.xml \
     manifest_oplus_camera_rfi.xml \
     manifest_oplus_cammidasservice_aidl.xml \
@@ -3399,7 +3378,6 @@ PRODUCT_PACKAGES += \
     qccsyshal_aidl-service \
     tcmd \
     wfdservice64 \
-    commcenterd \
     cwb_utils_aidl \
     android.hardware.secure_element-service.qti \
     vendor-oplus-hardware-performance-V1-service \
