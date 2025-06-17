@@ -24706,14 +24706,6 @@ sh_binary {
 }
 
 sh_binary {
-	name: "init.kernel.post_boot-pineapple_default_2_3_2_1",
-	owner: "oneplus",
-	src: "proprietary/vendor/bin/init.kernel.post_boot-pineapple_default_2_3_2_1.sh",
-	filename: "init.kernel.post_boot-pineapple_default_2_3_2_1.sh",
-	soc_specific: true,
-}
-
-sh_binary {
 	name: "init.qcom.class_core",
 	owner: "oneplus",
 	src: "proprietary/vendor/bin/init.qcom.class_core.sh",
