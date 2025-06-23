@@ -5292,7 +5292,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libcne.so"],
-			shared_libs: ["libcutils", "liblog", "libdiag", "libnetutils", "libutils", "libcneapiclient", "libqmiservices", "libqmi_cci", "libqti_vndfwk_detect_vendor", "libbinder", "libbinder_ndk", "libhardware_legacy", "libhidlbase", "libnl", "libidl", "libshsc", "libdsutils", "libandroid_net", "android.hardware.wifi.supplicant-V1-ndk", "android.hardware.wifi.hostapd-V1-ndk", "vendor.qti.data.factoryservice-V1-ndk", "vendor.qti.hardware.data.dynamicddsaidlservice-V1-ndk", "vendor.qti.hardware.data.qmiaidlservice-V1-ndk", "vendor.qti.hardware.data.flowaidlservice-V1-ndk", "vendor.qti.hardware.data.lceaidlservice-V1-ndk", "vendor.qti.latencyaidlservice-V1-ndk", "vendor.qti.data.mwqemaidlservice-V1-ndk", "vendor.qti.hardware.data.cneaidlservice.internal.server-V1-ndk", "vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-ndk", "vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk", "vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder_shim", "libcutils", "liblog", "libdiag", "libnetutils", "libutils", "libcneapiclient", "libqmiservices", "libqmi_cci", "libqti_vndfwk_detect_vendor", "libbinder", "libbinder_ndk", "libhardware_legacy", "libhidlbase", "libnl", "libidl", "libshsc", "libdsutils", "libandroid_net", "android.hardware.wifi.supplicant-V1-ndk", "android.hardware.wifi.hostapd-V1-ndk", "vendor.qti.data.factoryservice-V1-ndk", "vendor.qti.hardware.data.dynamicddsaidlservice-V1-ndk", "vendor.qti.hardware.data.qmiaidlservice-V1-ndk", "vendor.qti.hardware.data.flowaidlservice-V1-ndk", "vendor.qti.hardware.data.lceaidlservice-V1-ndk", "vendor.qti.latencyaidlservice-V1-ndk", "vendor.qti.data.mwqemaidlservice-V1-ndk", "vendor.qti.hardware.data.cneaidlservice.internal.server-V1-ndk", "vendor.qti.hardware.data.cneaidlservice.internal.constants-V1-ndk", "vendor.qti.hardware.data.cneaidlservice.internal.api-V1-ndk", "vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8632,7 +8632,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcc_sdk.so"],
-			shared_libs: ["libcutils", "liblog", "libutils", "libprotobuf-cpp-lite-21.7", "libbinder", "libbase", "libz", "vendor.qti.hardware.qccsyshal@1.2_vendor", "libhidlbase", "libfmq", "libcrypto", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder_shim", "libcutils", "liblog", "libutils", "libprotobuf-cpp-lite-21.7", "libbinder", "libbase", "libz", "vendor.qti.hardware.qccsyshal@1.2_vendor", "libhidlbase", "libfmq", "libcrypto", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9601,7 +9601,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqms_client.so"],
-			shared_libs: ["liblog", "libbinder", "libutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder_shim", "liblog", "libbinder", "libutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -12686,7 +12686,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.libdpmframework.so"],
-			shared_libs: ["libhidlbase_shim", "libdiag", "libbinder", "libbinder_ndk", "libcutils", "libutils", "liblog", "libhidlbase", "libhardware", "libhardware_legacy", "com.qualcomm.qti.dpm.api@1.0_vendor", "vendor.qti.hardware.dpmaidlservice-V1-ndk_vendor", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libhidlbase_shim", "libbinder_shim", "libdiag", "libbinder", "libbinder_ndk", "libcutils", "libutils", "liblog", "libhidlbase", "libhardware", "libhardware_legacy", "com.qualcomm.qti.dpm.api@1.0_vendor", "vendor.qti.hardware.dpmaidlservice-V1-ndk_vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -16612,7 +16612,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libwfdmmsrc_system.so"],
-			shared_libs: ["libbinder", "libmmosal", "liblog", "libutils", "libcutils", "libgui", "libui", "libwfdcommonutils", "libwfdconfigutils", "libinput", "libwfdmminterface", "libwfddisplayconfig", "libmedia_helper", "libaudioclient", "libwfdavenhancements", "libhidlbase", "libgralloctypes", "android.hardware.graphics.mapper@4.0", "libvndksupport", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.allocator-V2-ndk", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libgui_shim", "libbinder", "libmmosal", "liblog", "libutils", "libcutils", "libgui", "libui", "libwfdcommonutils", "libwfdconfigutils", "libinput", "libwfdmminterface", "libwfddisplayconfig", "libmedia_helper", "libaudioclient", "libwfdavenhancements", "libhidlbase", "libgralloctypes", "android.hardware.graphics.mapper@4.0", "libvndksupport", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.allocator-V2-ndk", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -16663,7 +16663,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libwfdservice.so"],
-			shared_libs: ["liblog", "libutils", "libcutils", "libbinder", "libgui", "libwfdsinksm", "libmmosal", "libwfdcommonutils", "libwfdconfigutils", "libinput", "libwfdmminterface", "libmedia_helper", "libaudioclient", "libaudiofoundation", "audioclient-types-aidl-cpp", "android.media.audio.common.types-V4-cpp", "libwfdmmsrc_system", "libwfdavenhancements", "libhidlbase", "vendor.qti.hardware.wifidisplaysession@1.0", "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libaudioclient_shim", "liblog", "libutils", "libcutils", "libbinder", "libgui", "libwfdsinksm", "libmmosal", "libwfdcommonutils", "libwfdconfigutils", "libinput", "libwfdmminterface", "libmedia_helper", "libaudioclient", "libaudiofoundation", "audioclient-types-aidl-cpp", "android.media.audio.common.types-V4-cpp", "libwfdmmsrc_system", "libwfdavenhancements", "libhidlbase", "vendor.qti.hardware.wifidisplaysession@1.0", "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -25006,7 +25006,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/qcc-vendor"],
-			shared_libs: ["libcutils", "liblog", "libutils", "libprotobuf-cpp-lite-21.7", "libqcc_file_agent", "libqcc_sdk", "libqmi_cci", "libqmiservices", "libidl", "libz", "libbase", "libfmq", "libhidlbase", "libbinder", "libbinder_ndk", "android.hardware.common-V2-ndk", "vendor.qti.qccvndhal_aidl-V1-ndk_vendor", "vendor.qti.qccvndhal_aidl-halimpl", "vendor.qti.hardware.qccsyshal@1.2_vendor", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder_shim", "libcutils", "liblog", "libutils", "libprotobuf-cpp-lite-21.7", "libqcc_file_agent", "libqcc_sdk", "libqmi_cci", "libqmiservices", "libidl", "libz", "libbase", "libfmq", "libhidlbase", "libbinder", "libbinder_ndk", "android.hardware.common-V2-ndk", "vendor.qti.qccvndhal_aidl-V1-ndk_vendor", "vendor.qti.qccvndhal_aidl-halimpl", "vendor.qti.hardware.qccsyshal@1.2_vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -25091,7 +25091,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/qms"],
-			shared_libs: ["libavservices_minijail", "libcutils", "liblog", "libdiag", "libnetutils", "libutils", "libhardware_legacy", "libqmiservices", "libqmi_cci", "libnl", "libidl", "libandroid_net", "libhidlbase", "libbinder", "libbinder_ndk", "libjsoncpp", "libselinux", "libshsc", "vendor.qti.hardware.bttpi-V3-ndk", "libprotobuf-cpp-full-21.7", "libz", "libcrypto", "libssl", "libbase", "libcom.android.tethering.connectivity_native", "android.hardware.wifi.supplicant-V1-ndk", "android.hardware.wifi.hostapd-V1-ndk", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder_shim", "libavservices_minijail", "libcutils", "liblog", "libdiag", "libnetutils", "libutils", "libhardware_legacy", "libqmiservices", "libqmi_cci", "libnl", "libidl", "libandroid_net", "libhidlbase", "libbinder", "libbinder_ndk", "libjsoncpp", "libselinux", "libshsc", "vendor.qti.hardware.bttpi-V3-ndk", "libprotobuf-cpp-full-21.7", "libz", "libcrypto", "libssl", "libbase", "libcom.android.tethering.connectivity_native", "android.hardware.wifi.supplicant-V1-ndk", "android.hardware.wifi.hostapd-V1-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -25635,7 +25635,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/xtra-daemon"],
-			shared_libs: ["libutils", "libcutils", "libcrypto", "libssl", "libsqlite", "libgps.utils", "libloc_core", "libizat_core", "liblbs_core", "liblog", "libandroid_net", "libavservices_minijail", "libsys_info_cache", "libpal_net_if", "libbinder", "libbinder_ndk", "libqcc_sdk", "libqcc_file_agent", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder_shim", "libutils", "libcutils", "libcrypto", "libssl", "libsqlite", "libgps.utils", "libloc_core", "libizat_core", "liblbs_core", "liblog", "libandroid_net", "libavservices_minijail", "libsys_info_cache", "libpal_net_if", "libbinder", "libbinder_ndk", "libqcc_sdk", "libqcc_file_agent", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
