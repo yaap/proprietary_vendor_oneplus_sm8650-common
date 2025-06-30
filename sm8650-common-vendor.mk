@@ -1065,7 +1065,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc \
-    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/virtualcameraprovider.rc:$(TARGET_COPY_OUT_ODM)/etc/init/virtualcameraprovider.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
@@ -1073,7 +1072,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-charger.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-charger.xml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/uah/uahconfig.pb:$(TARGET_COPY_OUT_ODM)/etc/uah/uahconfig.pb \
-    vendor/oneplus/sm8650-common/proprietary/odm/etc/virtualcamera.json:$(TARGET_COPY_OUT_ODM)/etc/virtualcamera.json \
     vendor/oneplus/sm8650-common/proprietary/odm/firmware/fastchg/22877/bms_heating_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22877/bms_heating_config.txt \
     vendor/oneplus/sm8650-common/proprietary/odm/firmware/fastchg/22877/charging_hyper_mode_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22877/charging_hyper_mode_config.txt \
     vendor/oneplus/sm8650-common/proprietary/odm/firmware/fastchg/22877/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22877/charging_thermal_config_default.txt \
@@ -2759,8 +2757,6 @@ PRODUCT_PACKAGES += \
     libQnnHtpV75Stub.aiboost \
     libQnnSystem.aiboost \
     android.hardware.secure_element-V1-ndk_odm \
-    camera.device@3.2-impl_odm \
-    camera.device@3.3-impl_odm \
     com.qti.sensor.imx581 \
     com.qti.sensor.imx615 \
     com.qti.sensor.imx888 \
@@ -3020,13 +3016,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     vendor.oplus.hardware.stability.oplus_project-V2-ndk \
     vendor.oplus.hardware.urcc-V1-ndk \
-    vendor.oplus.hardware.virtual_device.camera.hal@3.3 \
-    vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl \
-    vendor.oplus.hardware.virtual_device.camera.manager@1.0 \
-    vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl \
-    vendor.oplus.hardware.virtual_device.camera.provider@2.5-impl \
-    vendor.oplus.hardware.virtual_device.camera.provider@2.6-impl \
-    vendor.oplus.hardware.virtual_device.camera.provider@2.7-impl \
     vendor.pixelworks.hardware.display-V2-ndk \
     vendor.pixelworks.hardware.display-impl-i7 \
     vendor.pixelworks.hardware.display-impl-i7p \
@@ -3384,7 +3373,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.displaypanelfeature-service \
     vendor.oplus.hardware.stability.oplus_project-V1-service \
     vendor.pixelworks.hardware.feature-service \
-    virtualcameraprovider \
     wlschgd \
     irisConfig \
     oplus_sensor_fb \
