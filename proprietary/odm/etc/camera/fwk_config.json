@@ -392,6 +392,16 @@
             "2560x1440"
         ]
     },
+    "com.oplus.account":{
+        "previewSizeForAPI1Width": 2376,
+        "previewSizeForAPI1Height": 1080,
+        "needLimitFpsForAPI1": true,
+        "resolutionFilterForNotAddSizeAPI1": [
+            "2160x1080",
+            "1600x800",
+            "800x400"
+        ]
+    },
     "com.twitter.android": {
         "previewSizeForAPI1Width": 1920,
         "previewSizeForAPI1Height": 1080,
