@@ -1459,6 +1459,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/seccomp_policy/qesdksec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdksec.policy \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/seccomp_policy/qms.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qms.policy \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/seccomp_policy/qsap_voiceui.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qsap_voiceui.policy \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/seccomp_policy/qwesd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qwesd@2.0.policy \
@@ -1920,7 +1921,6 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
-    audio.primary.pineapple \
     camera.qcom.sm8650 \
     camera.qcom \
     com.dsi.ant@1.0-impl \
@@ -1983,26 +1983,17 @@ PRODUCT_PACKAGES += \
     libTxPwrJni \
     libVoiceSdk \
     libWlanServiceJni \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
     libaacvibrator \
     libadm \
     libadreno_app_profiles \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
-    libagm \
     libaidenoiser \
     libaidenoiserv2 \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
-    libar-pal \
     libarcsoft_triple_sat_vendor \
     libarcsoft_triple_zoomtranslator_vendor \
     libarmemlog \
-    libats \
     libaudio_log_utils \
     libaudiofeaturestats \
     libbacklight-calib \
@@ -2053,7 +2044,6 @@ PRODUCT_PACKAGES += \
     libcommonchiutils \
     libconfigdb \
     libcpion \
-    libcustomva_intf \
     libcv_common \
     libcwb_client_vendor \
     libcwb_qcom_aidl \
@@ -2114,7 +2104,6 @@ PRODUCT_PACKAGES += \
     libhdrvivid \
     libhistogram \
     libhme \
-    libhotword_intf \
     libhwconfigurationutil_vendor \
     libhwcsensor \
     libidl \
@@ -2163,8 +2152,6 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     liblowi_wifihal \
     liblqe \
-    liblx-ar_util \
-    liblx-osal \
     libmapdata_api \
     libmasc \
     libmcs \
@@ -2508,7 +2495,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.0 \
     vendor.qti.gnss-V6-ndk \
     vendor.qti.gnss-service \
-    vendor.qti.hardware.AGMIPC@1.0-impl \
     vendor.qti.hardware.ListenSoundModel@1.0-impl \
     vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.alarm-V1-ndk \
@@ -2555,7 +2541,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.2 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
-    vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
     vendor.qti.hardware.qccsyshal@1.2_vendor \
