@@ -1348,7 +1348,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/sxrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sxrd.rc \
-    vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.camera.provider-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider-service_64.rc \
@@ -1387,7 +1386,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/media_cliffs_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_cliffs_v1/video_system_specs.json \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/media_codecs_cliffs_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_cliffs_v0.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/media_codecs_cliffs_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_cliffs_v1.xml \
-    vendor/oneplus/sm8650-common/proprietary/vendor/etc/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/media_codecs_performance_cliffs_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_cliffs_v0.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/media_codecs_performance_cliffs_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_cliffs_v1.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/media_codecs_performance_pineapple.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_pineapple.xml \
@@ -2047,9 +2045,7 @@ PRODUCT_PACKAGES += \
     libcv_common \
     libcwb_client_vendor \
     libcwb_qcom_aidl \
-    libdapparamstorage \
     libdataitems \
-    libdeccfg \
     libdepthcomputation \
     libdiag \
     libdiagjni \
@@ -2058,7 +2054,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libdisplayqos \
     libdisplayskuutils \
-    libdlbdsservice \
     libdpmqmihal \
     libdpp_manager \
     libdpps \
@@ -2353,8 +2348,6 @@ PRODUCT_PACKAGES += \
     libspl \
     libssc_default_listener \
     libssd \
-    libstagefright_soft_ac4dec \
-    libstagefright_soft_ddpdec \
     libstreamparser \
     libsubsystem_control \
     libswregistrationalgo \
@@ -2451,9 +2444,6 @@ PRODUCT_PACKAGES += \
     libasphere \
     libquasar \
     libshoebox \
-    libswdap \
-    libswgamedap \
-    libswvqe \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -2461,8 +2451,6 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.4 \
     vendor.display.color@1.5 \
     vendor.display.postproc@1.0 \
-    vendor.dolby.hardware.dms@2.0-impl \
-    vendor.dolby.hardware.dms@2.0 \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
@@ -3262,7 +3250,6 @@ PRODUCT_PACKAGES += \
     qconfigservice \
     qcrilNrd \
     sxrservice \
-    vendor.dolby.hardware.dms@2.0-service \
     vendor.qti.camera.provider-service_64 \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
