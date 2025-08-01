@@ -3339,7 +3339,7 @@ PRODUCT_PACKAGES += \
     qccsyshal@1.2-service \
     qccsyshal_aidl-service \
     tcmd \
-    wfdservice64 \
+    wfdservice \
     cwb_utils_aidl \
     android.hardware.secure_element-service.qti \
     vendor-oplus-hardware-performance-V1-service \

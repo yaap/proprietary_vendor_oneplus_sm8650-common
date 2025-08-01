@@ -377,7 +377,7 @@ translation_f1 = 1.021
 3dr_depth_fps = 10
 
 # Remote device parameters
-remote_device_interface_name = wlan2,ap_br_wlan2,usb0
+#remote_device_interface_name = wlan2
 
 # WLAN link parameters
 # Enable dynamic wi-fi link settings

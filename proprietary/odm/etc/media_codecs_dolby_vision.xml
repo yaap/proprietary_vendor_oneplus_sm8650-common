@@ -10,6 +10,8 @@
             <Limit name="bitrate" range="1-160000000" />
             <Limit name="frame-rate" range="1-480" />
             <Feature name="adaptive-playback" />
+            <!--WangZhikun@MULTIMEDIA.MEDIASERVER.PLAYER 8732247 Add Dolby Codec Feature-->
+            <Feature name="oplus-dolby-vision-color-mode" />
             <Limit name="concurrent-instances" max="16" />
             <!-- <Limit name="performance-point-1280x720" value="480" /> -->
             <Limit name="performance-point-1920x1080" value="480" />

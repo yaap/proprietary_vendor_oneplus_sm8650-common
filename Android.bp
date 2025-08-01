@@ -16205,7 +16205,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libwfdmmsrc_system.so"],
-			shared_libs: ["libgui_shim", "libbinder", "libmmosal", "liblog", "libutils", "libcutils", "libgui", "libui", "libwfdcommonutils", "libwfdconfigutils", "libinput", "libwfdmminterface", "libwfddisplayconfig", "libmedia_helper", "libaudioclient", "libwfdavenhancements", "libhidlbase", "libgralloctypes", "android.hardware.graphics.mapper@4.0", "libvndksupport", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.allocator-V2-ndk", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder", "libmmosal", "liblog", "libutils", "libcutils", "libgui", "libui", "libwfdcommonutils", "libwfdconfigutils", "libinput", "libwfdmminterface", "libwfddisplayconfig", "libmedia_helper", "libaudioclient", "libwfdavenhancements", "libhidlbase", "libgralloctypes", "android.hardware.graphics.mapper@4.0", "libvndksupport", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.allocator-V2-ndk", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -16222,7 +16222,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libwfdnative.so"],
-			shared_libs: ["libinput_shim", "libandroid_runtime", "libui", "libinput", "libbinder", "libgui", "libnativehelper", "libutils", "liblog", "libwfdclient", "libhidlbase", "libhidlmemory", "libhidlbase", "android.hidl.token@1.0-utils", "android.hardware.graphics.common@1.0", "android.hardware.graphics.bufferqueue@1.0", "android.hardware.graphics.bufferqueue@2.0", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libandroid_runtime", "libui", "libinput", "libnativehelper", "libutils", "liblog", "libwfdclient", "libhidlbase", "libhidlmemory", "libbinder", "libgui", "android.hidl.base@1.0", "android.hidl.token@1.0-utils", "android.hardware.graphics.common@1.0", "android.hardware.graphics.bufferqueue@1.0", "android.hardware.graphics.bufferqueue@2.0", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -16256,7 +16256,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libwfdservice.so"],
-			shared_libs: ["libaudioclient_shim", "liblog", "libutils", "libcutils", "libbinder", "libgui", "libwfdsinksm", "libmmosal", "libwfdcommonutils", "libwfdconfigutils", "libinput", "libwfdmminterface", "libmedia_helper", "libaudioclient", "libaudiofoundation", "audioclient-types-aidl-cpp", "android.media.audio.common.types-V4-cpp", "libwfdmmsrc_system", "libwfdavenhancements", "libhidlbase", "vendor.qti.hardware.wifidisplaysession@1.0", "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libutils", "libcutils", "libbinder", "libgui", "libwfdsinksm", "libmmosal", "libwfdcommonutils", "libwfdconfigutils", "libinput", "libwfdmminterface", "libmedia_helper", "libaudioclient", "libaudiofoundation", "audioclient-types-aidl-cpp", "android.media.audio.common.types-V4-cpp", "libwfdmmsrc_system", "libwfdavenhancements", "libhidlbase", "vendor.qti.hardware.wifidisplaysession@1.0", "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -16307,7 +16307,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libwfduibcsink.so"],
-			shared_libs: ["libmmosal", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libmmosal", "libutils", "liblog", "libcutils", "libwfdconfigutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -21730,9 +21730,6 @@ android_app_import {
 	name: "WfdService",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
-	dex_preopt: {
-		enabled: false,
-	},
 	certificate: "platform",
 	privileged: true,
 	system_ext_specific: true,
@@ -25172,12 +25169,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "wfdservice64",
+	name: "wfdservice",
 	owner: "oneplus",
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/system_ext/bin/wfdservice64"],
-			shared_libs: ["libwfdservice_shim", "liblog", "libutils", "libcutils", "libbinder", "libwfdservice", "libmmosal", "libwfdcommonutils", "libwfdconfigutils", "libhidlbase", "libavservices_minijail", "libc++", "libc", "libm", "libdl", ],
+			srcs: ["proprietary/system_ext/bin/wfdservice"],
+			shared_libs: ["liblog", "libutils", "libcutils", "libbinder", "libwfdservice", "libmmosal", "libwfdcommonutils", "libwfdconfigutils", "libhidlbase", "libavservices_minijail", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
