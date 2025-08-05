@@ -1979,7 +1979,6 @@ PRODUCT_PACKAGES += \
     libaidenoiserv2 \
     libarcsoft_triple_sat_vendor \
     libarcsoft_triple_zoomtranslator_vendor \
-    libarmemlog \
     libaudio_log_utils \
     libaudiofeaturestats \
     libbacklight-calib \
