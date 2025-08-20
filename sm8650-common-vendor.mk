@@ -1908,6 +1908,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
+    audio.primary.pineapple \
     camera.qcom.sm8650 \
     camera.qcom \
     com.dsi.ant@1.0-impl \
@@ -1975,10 +1976,13 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
+    libagm \
     libaidenoiser \
     libaidenoiserv2 \
+    libar-pal \
     libarcsoft_triple_sat_vendor \
     libarcsoft_triple_zoomtranslator_vendor \
+    libarmemlog \
     libaudio_log_utils \
     libaudiofeaturestats \
     libbacklight-calib \
@@ -2496,6 +2500,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.2 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
+    vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
     vendor.qti.hardware.qccsyshal@1.2_vendor \
