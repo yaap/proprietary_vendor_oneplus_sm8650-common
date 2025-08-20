@@ -3000,7 +3000,7 @@ PRODUCT_PACKAGES += \
     dpmapi \
     qcrilhook \
     vendor.oplus.hardware.charger-V1-java \
-    vendor.oplus.hardware.charger-V6-java \
+    vendor.oplus.hardware.charger-V8-java \
     vendor.qti.ims.connection-V1.0-java \
     vendor.qti.ims.connectionaidlservice-V1-java \
     vendor.qti.ims.datachannelservice-V1-java \

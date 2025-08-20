@@ -21122,9 +21122,9 @@ dex_import {
 }
 
 dex_import {
-	name: "vendor.oplus.hardware.charger-V6-java",
+	name: "vendor.oplus.hardware.charger-V8-java",
 	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/vendor.oplus.hardware.charger-V6-java.jar"],
+	jars: ["proprietary/system_ext/framework/vendor.oplus.hardware.charger-V8-java.jar"],
 	system_ext_specific: true,
 }
 
