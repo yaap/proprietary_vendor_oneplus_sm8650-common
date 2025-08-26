@@ -15,6 +15,54 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
+	name: "libostatslog",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/libostatslog.so"],
+			shared_libs: ["liblog", "libcutils", "libstatssocket", "libstatspull", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so"],
+			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.performance-V1-ndk",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system/lib64/vendor.oplus.hardware.performance-V1-ndk.so"],
+			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.qti.diaghal-V1-ndk",
 	owner: "oneplus",
 	strip: {
@@ -15690,6 +15738,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.charger-V1-ndk",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system_ext/lib64/vendor.oplus.hardware.charger-V1-ndk.so"],
+			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.displaypanelfeature@1.0",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system_ext/lib64/vendor.oplus.hardware.displaypanelfeature@1.0.so"],
+			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.qti.ImsRtpService-V1-ndk",
 	owner: "oneplus",
 	strip: {
@@ -20306,7 +20388,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
+	name: "vendor.oplus.hardware.displaypanelfeature-V1-ndk_odm",
+	stem: "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
 	owner: "oneplus",
 	strip: {
 		none: true,
@@ -20357,7 +20440,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.performance-V1-ndk",
+	name: "vendor.oplus.hardware.performance-V1-ndk_odm",
+	stem: "vendor.oplus.hardware.performance-V1-ndk",
 	owner: "oneplus",
 	strip: {
 		none: true,
@@ -24329,6 +24413,23 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/bin/dpmd"],
 			shared_libs: ["libdpmframework", "libdiag_system", "libhardware_legacy", "libhidlbase", "libcutils", "libutils", "com.qualcomm.qti.dpm.api@1.0", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	system_ext_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "horae",
+	owner: "oneplus",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/system_ext/bin/horae"],
+			shared_libs: ["vendor.oplus.hardware.performance-V1-ndk", "liblog", "libcutils", "libcrypto", "libbinder", "libutils", "libhidlbase", "libhidltransport", "libhwbinder", "libbase", "libnl", "android.hardware.health@1.0", "android.hardware.health@2.0", "libbinder_ndk", "vendor.oplus.hardware.charger-V1-ndk", "libprotobuf-cpp-lite", "libostatslog", "android.hardware.health-V1-ndk", "vendor.oplus.hardware.displaypanelfeature@1.0", "vendor.oplus.hardware.displaypanelfeature-V1-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
