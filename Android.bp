@@ -20440,6 +20440,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "vendor.oplus.hardware.oplusSensor-V1-ndk",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.oplusSensor-V1-ndk.so"],
+			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "vendor.oplus.hardware.performance-V1-ndk_odm",
 	stem: "vendor.oplus.hardware.performance-V1-ndk",
 	owner: "oneplus",
@@ -22596,6 +22613,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "manifest_oplusSensor_aidl.xml",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplusSensor_aidl.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "manifest_oplus_camera_rfi.xml",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_camera_rfi.xml",
@@ -24515,6 +24541,24 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/hw/android.hardware.secure_element-service.qti"],
 			shared_libs: ["libQSEEComAPI", "libEseUtils", "libGPQeSE", "libbase", "liblog", "libutils", "libbinder_ndk", "android.hardware.secure_element-V1-ndk_odm", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	device_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "vendor-oplus-hardware-oplusSensor-V1-service",
+	owner: "oneplus",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/bin/hw/vendor-oplus-hardware-oplusSensor-V1-service"],
+			shared_libs: ["vendor.oplus.hardware.oplusSensor-V1-ndk", "libbase", "libcutils", "libdumpstateutil", "liblog", "libbinder_ndk", "libutils", "libhardware", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
