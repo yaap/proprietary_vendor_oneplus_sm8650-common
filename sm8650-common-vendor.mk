@@ -1055,10 +1055,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/displaycolorfeaturecfg.xml:$(TARGET_COPY_OUT_ODM)/etc/displaycolorfeaturecfg.xml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/dolby/display/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/display/dolby_vision.cfg \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/dolby/dolby_vision.cfg:$(TARGET_COPY_OUT_ODM)/etc/dolby/dolby_vision.cfg \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/hdr3dlut_pq_qcom_grid_out_rgb.cube:$(TARGET_COPY_OUT_ODM)/etc/hdr3dlut_pq_qcom_grid_out_rgb.cube \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/horae/horae_target.conf:$(TARGET_COPY_OUT_ODM)/etc/horae/horae_target.conf \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/android.hardware.contexthub-service.qmi.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.contexthub-service.qmi.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/android.hardware.secure_element-service.qti.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.secure_element-service.qti.rc \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/dms-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/dms-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/hw/init.oplus.display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.display.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/init.oplus.sensor.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oplus.sensor.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/init.touchDaemon.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.touchDaemon.rc \
@@ -1072,6 +1074,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/media_codecs_c2_dolby_audio.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_c2_dolby_audio.xml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
@@ -2855,11 +2858,19 @@ PRODUCT_PACKAGES += \
     libcalculator \
     libcalculator_htp \
     libclstc_fod_color \
+    libcodec2_soft_ac4dec_sp \
+    libcodec2_soft_ddpdec_sp \
+    libcodec2_store_dolby_sp \
     libcreatebin \
     libcvface_api \
+    libdapparamstorage_sp \
+    libdeccfg_sp \
     libdisplayaidlapis \
     libdisplaycolorfeature \
     libdisplayfossfeature_nature \
+    libdlbdsservice_sp \
+    libdlbpreg_sp \
+    libdmshal \
     libdolbyclstc \
     libdpaservice \
     libdualcam_optical_zoom_control \
@@ -2917,6 +2928,7 @@ PRODUCT_PACKAGES += \
     libsharebuffer_impl \
     libsnapdragoncolor-pxlw \
     libsnpe_loader \
+    libspatializerparamstorage \
     libstblur_api \
     libstblur_capture_api \
     libstface_datas \
@@ -2939,6 +2951,13 @@ PRODUCT_PACKAGES += \
     libyuv2 \
     libyuvwrapper \
     libzlib \
+    libOplusSpatializer \
+    libdlbvol_sp \
+    liboplusupmixeffect \
+    libswdap_sp \
+    libswgamedap_sp \
+    vendor.dolby.dms-V1-ndk \
+    vendor.dolby_sp.hardware.dmssp@2.0 \
     vendor.oplus.hardware.camera_rfi-V1-ndk \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cammidasservice-V1-ndk \
@@ -3000,6 +3019,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     ImsRcsService \
+    PowerOffAlarm \
     QCC \
     QtiTelephonyService \
     dpmserviceapp \
@@ -3172,6 +3192,7 @@ PRODUCT_PACKAGES += \
     snapYUV420sp2RGBBinary \
     snapseparateYUV2RGBBinary \
     android.hardware.contexthub-service.qmi.xml \
+    dms-service.xml \
     manifest_displaycolorfeature_aidl.xml \
     manifest_oplusSensor_aidl.xml \
     manifest_oplus_camera_rfi.xml \
@@ -3302,6 +3323,7 @@ PRODUCT_PACKAGES += \
     vendor-oplus-hardware-oplusSensor-V1-service \
     vendor-oplus-hardware-performance-V1-service \
     vendor-oplus-hardware-touch-V2-service \
+    vendor.dolby.dms.service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.cammidasservice-V1-service \
     vendor.oplus.hardware.charger-V6-service \
