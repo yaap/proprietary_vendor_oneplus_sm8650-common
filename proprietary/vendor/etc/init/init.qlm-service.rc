@@ -10,7 +10,6 @@ service vendor.qlm-service /vendor/bin/qlm-service
 	group root
 	socket qlm_service seqpacket 0660 root system
 	disabled
-	oneshot
 
 on property:sys.boot_completed=1
 	start vendor.qlm-service

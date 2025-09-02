@@ -13,8 +13,8 @@ on boot
 
 on post-fs-data
     #Create nicmd daemon dir
-    mkdir /data/vendor/nicmd 2750 radio system
-    chmod 2750 /data/vendor/nicmd
+    mkdir /data/vendor/nicmd 0770 radio radio
+    chmod 0770 /data/vendor/nicmd
 
     # Create nicmd recovery file
     write /data/vendor/nicmd/nicm_recovery ""

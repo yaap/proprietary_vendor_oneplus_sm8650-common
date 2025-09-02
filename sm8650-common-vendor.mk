@@ -2191,8 +2191,7 @@ PRODUCT_PACKAGES += \
     libnspdiag \
     libnspextensionloader \
     libnspframework \
-    libnspframeworkcore \
-    libnspframeworkcoreutility \
+    libnspframeworkutility \
     libnspgraphing \
     libnspipc \
     libnsposal \
@@ -3013,8 +3012,6 @@ PRODUCT_PACKAGES += \
     IWlanService \
     TimeService \
     uimgbaservice \
-    uimremoteclient \
-    uimremoteserver \
     EuiccGoogle \
     HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
@@ -3028,8 +3025,6 @@ PRODUCT_PACKAGES += \
     com.android.hotwordenrollment.common.util \
     uimgbalibrary \
     uimgbamanagerlibrary \
-    uimremoteclientlibrary \
-    uimremoteserverlibrary \
     uimservicelibrary \
     com.qti.dpmframework \
     dpmapi \
