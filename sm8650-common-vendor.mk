@@ -1067,6 +1067,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-oplusSensor-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-oplusSensor-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-performance-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-performance-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V6-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V6-service.rc \
@@ -2871,6 +2872,10 @@ PRODUCT_PACKAGES += \
     libdlbpreg_sp \
     libdmshal \
     libdolbyclstc \
+    libdolbydecoderprocessor \
+    libdolbyeglcore \
+    libdolbyencoderprocessor \
+    libdolbyottcameracontrol \
     libdpaservice \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
@@ -2918,6 +2923,8 @@ PRODUCT_PACKAGES += \
     libpwirisservicesi \
     libpwirissoft \
     libpwsoftirisPCS \
+    libqcodec2_dolbydecoderfilter \
+    libqcodec2_dolbyencoderfilter \
     libqsh.utils \
     libremosaic_wrapper \
     libroi \
@@ -3200,6 +3207,7 @@ PRODUCT_PACKAGES += \
     manifest_oplus_stability_project_aidl.xml \
     manifest_performance_aidl.xml \
     manifest_touch_aidl.xml \
+    vendor.dolby.media.c2@1.0-service.xml \
     vendor.pixelworks.hardware.display-service.xml \
     vendor.pixelworks.hardware.feature-service.xml \
     ATFWD-daemon \
@@ -3319,6 +3327,7 @@ PRODUCT_PACKAGES += \
     vendor-oplus-hardware-performance-V1-service \
     vendor-oplus-hardware-touch-V2-service \
     vendor.dolby.dms.service \
+    vendor.dolby_sp.media.c2@1.0-service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.cammidasservice-V1-service \
     vendor.oplus.hardware.charger-V6-service \

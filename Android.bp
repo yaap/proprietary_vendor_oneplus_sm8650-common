@@ -19079,6 +19079,74 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libdolbydecoderprocessor",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libdolbydecoderprocessor.so"],
+			shared_libs: ["liblog", "libEGL", "libGLESv2", "libui", "libutils", "libstagefright_foundation", "libcutils", "libdolbyottcameracontrol", "libhidlbase", "libnativewindow", "libdolbyeglcore", "libcodec2_vndk", "libcodec2", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libdolbyeglcore",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libdolbyeglcore.so"],
+			shared_libs: ["libEGL", "libGLESv3", "libnativewindow", "libcutils", "liblog", "libutils", "libui", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libdolbyencoderprocessor",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libdolbyencoderprocessor.so"],
+			shared_libs: ["libdolbyeglcore", "libnativewindow", "liblog", "libEGL", "libGLESv3", "libdolbyottcameracontrol", "libutils", "libcutils", "libui", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libdolbyottcameracontrol",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libdolbyottcameracontrol.so"],
+			shared_libs: ["liblog", "libGLESv3", "libEGL", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libdpaservice",
 	owner: "oneplus",
 	strip: {
@@ -19870,6 +19938,40 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libpwsoftirisPCS.so"],
 			shared_libs: ["liblog", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqcodec2_dolbydecoderfilter",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libqcodec2_dolbydecoderfilter.so"],
+			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_utils", "libqcodec2_basecodec", "libqcodec2_filterbase", "libqcodec2_platform", "qti.video.utils.videobufferlayout", "libdolbydecoderprocessor", "libstagefright_foundation", "libnativewindow", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqcodec2_dolbyencoderfilter",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libqcodec2_dolbyencoderfilter.so"],
+			shared_libs: ["libutils", "libcutils", "liblog", "libcodec2_vndk", "libqcodec2_base", "libqcodec2_utils", "libqcodec2_basecodec", "libqcodec2_filterbase", "libqcodec2_platform", "qti.video.utils.videobufferlayout", "libnativewindow", "libEGL", "libGLESv3", "libdolbyencoderprocessor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -22956,6 +23058,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+	name: "vendor.dolby.media.c2@1.0-service.xml",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/vendor.dolby.media.c2@1.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
 	name: "vendor.pixelworks.hardware.display-service.xml",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/vendor.pixelworks.hardware.display-service.xml",
@@ -24857,6 +24968,24 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/hw/vendor.dolby.dms.service"],
 			shared_libs: ["liblog", "libutils", "libbase", "libbinder", "libbinder_ndk", "vendor.dolby.dms-V1-ndk", "libdapparamstorage_sp", "libdmshal", "libdlbdsservice_sp", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	device_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "vendor.dolby_sp.media.c2@1.0-service",
+	owner: "oneplus",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/bin/hw/vendor.dolby_sp.media.c2@1.0-service"],
+			shared_libs: ["libbase", "liblog", "libcodec2", "libcodec2_vndk", "libutils", "android.hardware.media.c2@1.0", "libcodec2_hidl@1.0", "libavservices_minijail", "libhidlbase", "libbinder", "libcodec2_store_dolby_sp", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
