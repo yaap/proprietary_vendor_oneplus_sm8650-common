@@ -1745,7 +1745,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libostatslog \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk \
-    vendor.oplus.hardware.performance-V1-ndk \
     vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
     com.qti.eeprom.gt24p128c2csli_imx766 \
@@ -2675,7 +2674,6 @@ PRODUCT_PACKAGES += \
     libqcc_file_agent_sys \
     libqccdme \
     libqccfileservice \
-    vendor.oplus.hardware.charger-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature@1.0 \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
@@ -2966,7 +2964,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.camera_rfi-V1-ndk \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cammidasservice-V1-ndk \
-    vendor.oplus.hardware.charger-V6-ndk \
     vendor.oplus.hardware.charger@1.0 \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk_odm \
