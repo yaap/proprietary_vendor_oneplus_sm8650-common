@@ -2942,7 +2942,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
     vendor.oplus.hardware.stability.oplus_project-V2-ndk \
-    vendor.oplus.hardware.urcc-V1-ndk \
     vendor.pixelworks.hardware.display-V2-ndk \
     vendor.pixelworks.hardware.display-impl-i7 \
     vendor.pixelworks.hardware.display-impl-i7p \
