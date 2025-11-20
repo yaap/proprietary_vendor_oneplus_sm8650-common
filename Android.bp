@@ -31,22 +31,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/system/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.diaghal-V1-ndk",
 	owner: "oneplus",
 	strip: {
@@ -12136,23 +12120,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.stability.oplus_project-V1-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.oplus.hardware.stability.oplus_project-V1-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.pixelworks.hardware.display@1.0_vendor",
 	stem: "vendor.pixelworks.hardware.display@1.0",
 	owner: "oneplus",
@@ -15607,23 +15574,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/lib64/libqccfileservice.so"],
 			shared_libs: ["libcurl", "libssl", "libcrypto", "libcutils", "liblog", "libutils", "libbase", "libfmq", "libhidlbase", "libbinder_ndk", "vendor.qti.hardware.qccvndhal@1.0", "vendor.qti.hardware.qccsyshal@1.2", "android.hardware.common-V2-ndk", "vendor.qti.qccvndhal_aidl-V1-ndk", "vendor.qti.qccsyshal_aidl-V1-ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	system_ext_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.displaypanelfeature@1.0",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/system_ext/lib64/vendor.oplus.hardware.displaypanelfeature@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -19245,23 +19195,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "liboplus-uah-client",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/liboplus-uah-client.so"],
-			shared_libs: ["vendor.oplus.hardware.urcc-V1-ndk", "libcutils", "libutils", "liblog", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "liboplus_service",
 	owner: "oneplus",
 	strip: {
@@ -19993,40 +19926,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libuahcore",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/libuahcore.so"],
-			shared_libs: ["libthermalclient", "vendor.oplus.hardware.urcc-V1-ndk", "libbase", "liblog", "libcutils", "libprotobuf-cpp-lite-21.7", "libxml2", "libcrypto", "libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "liburcccore",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/liburcccore.so"],
-			shared_libs: ["android.frameworks.stats-V1-ndk", "vendor.oplus.hardware.urcc-V1-ndk", "libbase", "liblog", "libcutils", "libxml2", "libbinder_ndk", "libutils", "libcrypto", "libprotobuf-cpp-lite-21.7", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libvega_common",
 	owner: "oneplus",
 	strip: {
@@ -20231,58 +20130,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.displaypanelfeature-V1-ndk_odm",
-	stem: "vendor.oplus.hardware.displaypanelfeature-V1-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.displaypanelfeature-V1-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.olc2-V1-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.olc2-V1-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.olc2-V2-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.olc2-V2-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.oplus.hardware.oplusSensor-V1-ndk",
 	owner: "oneplus",
 	strip: {
@@ -20325,23 +20172,6 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.sendextcamcmd-V2-ndk.so"],
-			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.stability.oplus_project-V2-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.stability.oplus_project-V2-ndk.so"],
 			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},

@@ -1076,7 +1076,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-charger.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-charger.xml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
-    vendor/oneplus/sm8650-common/proprietary/odm/etc/uah/uahconfig.pb:$(TARGET_COPY_OUT_ODM)/etc/uah/uahconfig.pb \
     vendor/oneplus/sm8650-common/proprietary/odm/firmware/fastchg/22877/bms_heating_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22877/bms_heating_config.txt \
     vendor/oneplus/sm8650-common/proprietary/odm/firmware/fastchg/22877/charging_hyper_mode_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22877/charging_hyper_mode_config.txt \
     vendor/oneplus/sm8650-common/proprietary/odm/firmware/fastchg/22877/charging_thermal_config_default.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22877/charging_thermal_config_default.txt \
@@ -1740,7 +1739,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libostatslog \
-    vendor.oplus.hardware.displaypanelfeature-V1-ndk \
     vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
     com.qti.eeprom.gt24p128c2csli_imx766 \
@@ -2442,7 +2440,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.cwb@1.0 \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk_vendor \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk_vendor \
-    vendor.oplus.hardware.stability.oplus_project-V1-ndk \
     vendor.pixelworks.hardware.display@1.0_vendor \
     vendor.pixelworks.hardware.display@1.1_vendor \
     vendor.pixelworks.hardware.display@1.2_vendor \
@@ -2665,7 +2662,6 @@ PRODUCT_PACKAGES += \
     libqcc_file_agent_sys \
     libqccdme \
     libqccfileservice \
-    vendor.oplus.hardware.displaypanelfeature@1.0 \
     vendor.qti.ImsRtpService-V1-ndk \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.dpmaidlservice-V1-ndk \
@@ -2877,7 +2873,6 @@ PRODUCT_PACKAGES += \
     libocce3a \
     liboemconfigurationutil \
     libolc_vnd \
-    liboplus-uah-client \
     liboplus_service \
     liboplusblur_capture_api \
     libosenseaidlhalclient \
@@ -2921,8 +2916,6 @@ PRODUCT_PACKAGES += \
     libtriplecam_image_optical_zoom \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
-    libuahcore \
-    liburcccore \
     libvega_common \
     libvega_face \
     libwatermark_photo \
@@ -2935,13 +2928,9 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.cammidasservice-V1-ndk \
     vendor.oplus.hardware.charger@1.0 \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
-    vendor.oplus.hardware.displaypanelfeature-V1-ndk_odm \
-    vendor.oplus.hardware.olc2-V1-ndk \
-    vendor.oplus.hardware.olc2-V2-ndk \
     vendor.oplus.hardware.oplusSensor-V1-ndk \
     vendor.oplus.hardware.sendextcamcmd-V1-service-impl \
     vendor.oplus.hardware.sendextcamcmd-V2-ndk \
-    vendor.oplus.hardware.stability.oplus_project-V2-ndk \
     vendor.pixelworks.hardware.display-V2-ndk \
     vendor.pixelworks.hardware.display-impl-i7 \
     vendor.pixelworks.hardware.display-impl-i7p \
