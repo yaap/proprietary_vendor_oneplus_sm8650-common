@@ -270,23 +270,6 @@
         "app_disable_fb_evict": true,
         "app_disable_fb_activity": [
             "com.tencent.mm.plugin.recordvideo.activity.MMRecordUI"
-        ],
-        "app_disable_fb_thirdparty_activity": [
-            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI00",
-            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI01",
-            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI02",
-            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI03",
-            "com.tencent.mm.plugin.appbrand.ui.AppBrandUI04",
-            "com.tencent.mm.plugin.flash.FaceFlashUI",
-            "com.tencent.mm.plugin.flash.action.FaceFlashActionUI"
-        ],
-        "app_enable_fb_activity": [
-            "com.tencent.mm.ui.LauncherUI",
-            "com.tencent.mm.plugin.voip.ui.VideoActivity",
-            "com.tencent.mm.plugin.profile.ui.ContactInfoUI",
-            "com.tencent.mm.plugin.multitalk.ui.MultiTalkMainUI",
-            "com.tencent.mm.ui.chatting.ChattingUI",
-            ""
         ]
     },
     "com.instagram.android": {
@@ -448,6 +431,20 @@
     "com.oplus.linker": {
         "previewSizeForAPI1Width": 2376,
         "previewSizeForAPI1Height": 1080
+    },
+    "com.shuru.nearme": {
+        "previewSizeForAPI1Width": 2160,
+        "previewSizeForAPI1Height": 1440,
+        "resolutionFilterForNotAddSizeAPI1": [
+            "1920x1080"
+        ]
+    },
+    "com.playfake.instafake.funsta": {
+        "previewSizeForAPI1Width": 2160,
+        "previewSizeForAPI1Height": 1080,
+        "resolutionFilterForNotAddSizeAPI1": [
+            "3280x2464"
+        ]
     },
     "com.skype.raider": {
         "needLimitFpsForAPI1": true,

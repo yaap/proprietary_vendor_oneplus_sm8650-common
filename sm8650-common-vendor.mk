@@ -32,6 +32,27 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/asd/detect.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/asd/detect.dlc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/asd/v204_class.dlc:$(TARGET_COPY_OUT_ODM)/etc/camera/asd/v204_class.dlc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/ashdr/ncf_pack.ncf:$(TARGET_COPY_OUT_ODM)/etc/camera/ashdr/ncf_pack.ncf \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/BaseLut:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/BaseLut \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/CWCM32Lut0:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/CWCM32Lut0 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/CWCM32Lut1:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/CWCM32Lut1 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/CWCM32Lut2:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/CWCM32Lut2 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/CWCM32Lut3:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/CWCM32Lut3 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/CWCM32Lut4:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/CWCM32Lut4 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/CWCM32Lut5:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/CWCM32Lut5 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/CWCM32Lut6:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/CWCM32Lut6 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/CWCM32Lut7:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/CWCM32Lut7 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/CWCM32Lut8:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/CWCM32Lut8 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/LMTLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/LMTLut0 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/LMTLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/LMTLut1 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SC32Lut0:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SC32Lut0 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SC32Lut1:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SC32Lut1 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SC32Lut2:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SC32Lut2 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SC32Lut3:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SC32Lut3 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SC32Lut4:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SC32Lut4 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SC32Lut5:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SC32Lut5 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SC32Lut6:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SC32Lut6 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SC32Lut7:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SC32Lut7 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SC32Lut8:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SC32Lut8 \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SCLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SCLut0 \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SCLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SCLut1 \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SCLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SCLut2 \
@@ -41,6 +62,27 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SCLut6:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SCLut6 \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SCLut7:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SCLut7 \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/SCLut8:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/SCLut8 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/BaseLut:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/BaseLut \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/CWCM32Lut0:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/CWCM32Lut0 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/CWCM32Lut1:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/CWCM32Lut1 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/CWCM32Lut2:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/CWCM32Lut2 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/CWCM32Lut3:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/CWCM32Lut3 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/CWCM32Lut4:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/CWCM32Lut4 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/CWCM32Lut5:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/CWCM32Lut5 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/CWCM32Lut6:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/CWCM32Lut6 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/CWCM32Lut7:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/CWCM32Lut7 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/CWCM32Lut8:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/CWCM32Lut8 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/LMTLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/LMTLut0 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/LMTLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/LMTLut1 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/SC32Lut0:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/SC32Lut0 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/SC32Lut1:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/SC32Lut1 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/SC32Lut2:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/SC32Lut2 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/SC32Lut3:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/SC32Lut3 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/SC32Lut4:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/SC32Lut4 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/SC32Lut5:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/SC32Lut5 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/SC32Lut6:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/SC32Lut6 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/SC32Lut7:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/SC32Lut7 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/SC32Lut8:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/SC32Lut8 \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/SCLut0:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/SCLut0 \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/SCLut1:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/SCLut1 \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/lmt/lmt/SCLut2:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/lmt/lmt/SCLut2 \
@@ -53,9 +95,15 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/setting/Ditherout:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/setting/Ditherout \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/setting/FromXml:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/setting/FromXml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/setting/SimTool.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/setting/SimTool.ini \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/setting/SimTool_Dolby.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/setting/SimTool_Dolby.ini \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/setting/SimTool_Master.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/setting/SimTool_Master.ini \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/setting/TriggerBIN:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/setting/TriggerBIN \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/setting/setting/Ditherout:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/setting/setting/Ditherout \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/setting/setting/FromXml:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/setting/setting/FromXml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/setting/setting/SimTool.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/setting/setting/SimTool.ini \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/setting/setting/SimTool_Dolby.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/setting/setting/SimTool_Dolby.ini \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/setting/setting/SimTool_Master.ini:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/setting/setting/SimTool_Master.ini \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/setting/setting/TriggerBIN:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/setting/setting/TriggerBIN \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/vig/VigTab_Main:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/vig/VigTab_Main \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/vig/VigTab_Tele:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/vig/VigTab_Tele \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/basictone/vig/VigTab_UTele:$(TARGET_COPY_OUT_ODM)/etc/camera/basictone/vig/VigTab_UTele \
@@ -588,7 +636,10 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/White.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/White.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/black_gold.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/black_gold.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/blackandwhite.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/blackandwhite.cube.rgb.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/blackandwhite_0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/blackandwhite_0.cube.rgb.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/blackandwhite_1.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/blackandwhite_1.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/bright_coloured.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/bright_coloured.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/city.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/city.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/cola.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/cola.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/cyberpunk-kitsch-3.1.CUBE.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/drjw1994.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/drjw1994.bin \
@@ -616,13 +667,17 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/gt-quietly-ele.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-quietly-ele.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/gt-steaming.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/gt-steaming.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/interstellar_space.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/interstellar_space.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/island.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/island.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/jw_sun.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/jw_sun.CUBE.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/jw_surprise.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/jw_surprise.CUBE.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/kodak.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/kodak.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/meicam.child.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/meicam.child.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/mono.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/mono.cube.rgb.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/mono_0.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/mono_0.cube.rgb.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/mono_1.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/mono_1.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/morandi.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/morandi.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/morning.dream.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/morning.dream.cube.rgb.bin \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/mountains.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/mountains.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/natural.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/natural.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/neon-2020.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/neon-2020.cube.rgb.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/meishe_lut/nostalgic.scene.cube.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/meishe_lut/nostalgic.scene.cube.rgb.bin \
@@ -1048,6 +1103,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/tonemap/tonemap_lut_7:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_7 \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_8 \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/v10_vamm_sig_norm_0408_8143_SIM.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/v10_vamm_sig_norm_0408_8143_SIM.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/wide_inv_padding_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide_inv_padding_mapxy_33x25.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/camera/wide_padding_mapxy_33x25.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/wide_padding_mapxy_33x25.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/charge.cfg:$(TARGET_COPY_OUT_ODM)/etc/charge.cfg \
@@ -1066,14 +1122,14 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor-oplus-hardware-touch-V2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor-oplus-hardware-touch-V2-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.cammidasservice-V1-service.rc \
-    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V6-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V6-service.rc \
+    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.charger-V9-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.charger-V9-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.displaypanelfeature-service.rc \
-    vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.stability.oplus_project-V1-service.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature-service-lazy.rc \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/media_codecs_dolby_vision.xml:$(TARGET_COPY_OUT_ODM)/etc/media_codecs_dolby_vision.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/oneplus/sm8650-common/proprietary/vendor/firmware/sn220u.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sn220u.bin \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/permissions/vendor-oplus-hardware-charger.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-charger.xml \
     vendor/oneplus/sm8650-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/oneplus/sm8650-common/proprietary/odm/firmware/fastchg/22877/bms_heating_config.txt:$(TARGET_COPY_OUT_ODM)/firmware/fastchg/22877/bms_heating_config.txt \
@@ -1159,10 +1215,12 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/horae/horae.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/horae/horae.conf \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/horae/horae_SM7675.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/horae/horae_SM7675.conf \
+    vendor/oneplus/sm8650-common/proprietary/system_ext/etc/horae/horae_SM8635.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/horae/horae_SM8635.conf \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/horae/horae_SM8650.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/horae/horae_SM8650.conf \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/horae/horae_SM8650_CAIHONG.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/horae/horae_SM8650_CAIHONG.conf \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/init/horae.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/horae.rc \
+    vendor/oneplus/sm8650-common/proprietary/system_ext/etc/init/qspa_system.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspa_system.rc \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/init/vendor.qti.qccsyshal_aidl-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.qccsyshal_aidl-service.rc \
@@ -1174,6 +1232,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
+    vendor/oneplus/sm8650-common/proprietary/system_ext/etc/qspa/qspa_default.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qspa/qspa_default.rc \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
     vendor/oneplus/sm8650-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
@@ -2681,6 +2740,15 @@ PRODUCT_PACKAGES += \
     libQnnHtpPrepare.aiboost \
     libQnnHtpV75Stub.aiboost \
     libQnnSystem.aiboost \
+    libQnnHtpV75Skel.signed.aiframe \
+    libQnnHtpV75Skel.unsigned.aiframe \
+    libQnnHtp.aiframe \
+    libQnnHtpPrepare.aiframe \
+    libQnnHtpV75Stub.aiframe \
+    libQnnSystem.aiframe \
+    libaiboost_qnn_external_delegate \
+    libqcom_llm \
+    libtransformer_lite \
     android.hardware.secure_element-V1-ndk_odm \
     com.qti.sensor.imx581 \
     com.qti.sensor.imx615 \
@@ -2713,6 +2781,7 @@ PRODUCT_PACKAGES += \
     libCS \
     libCaptureBokeh \
     libDeVIS \
+    libDocRectification \
     libEIS \
     libEISLive \
     libFDClite \
@@ -2777,7 +2846,7 @@ PRODUCT_PACKAGES += \
     libaecCustomParamParser \
     libafCustomParamParser \
     libaiboost \
-    libaiboost_qnn_external_delegate \
+    libaiboost_llm \
     libaiboost_qnn_external_delegate_te \
     libaiboost_qnn_sr \
     libaiboost_sr \
@@ -2789,6 +2858,7 @@ PRODUCT_PACKAGES += \
     libaiseg \
     libaisr \
     libalCFR \
+    libalog \
     libams \
     libancbase_rt_fusion \
     libancbase_segbase \
@@ -2828,6 +2898,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_scbokeh_video \
     libarcsoft_smart_denoise \
     libarcsoft_smart_denoise_v4 \
+    libarcsoft_tfm \
     libarcsoft_triple_sat \
     libarcsoft_triple_zoomtranslator \
     libarcsoft_turbo_fusion_raw_portrait_super_night \
@@ -2899,6 +2970,7 @@ PRODUCT_PACKAGES += \
     libroi \
     libsat \
     libsaveshaderbin \
+    libsecurity_event_olc_vnd \
     libsharebuffer \
     libsharebuffer_impl \
     libsnapdragoncolor-pxlw \
@@ -3153,7 +3225,6 @@ PRODUCT_PACKAGES += \
     manifest_oplus_displaypanelfeature_aidl.xml \
     manifest_oplus_fingerprint_aidl_v3.xml \
     manifest_oplus_sendextcamcmd.xml \
-    manifest_oplus_stability_project_aidl.xml \
     manifest_touch_aidl.xml \
     vendor.pixelworks.hardware.display-service.xml \
     vendor.pixelworks.hardware.feature-service.xml \
@@ -3270,13 +3341,13 @@ PRODUCT_PACKAGES += \
     tcmd \
     cwb_utils_aidl \
     android.hardware.secure_element-service.qti \
+    gauged \
     vendor-oplus-hardware-oplusSensor-V1-service \
     vendor-oplus-hardware-touch-V2-service \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff \
     vendor.oplus.hardware.cammidasservice-V1-service \
-    vendor.oplus.hardware.charger-V6-service \
+    vendor.oplus.hardware.charger-V9-service \
     vendor.oplus.hardware.displaypanelfeature-service \
-    vendor.oplus.hardware.stability.oplus_project-V1-service \
     vendor.pixelworks.hardware.feature-service \
     wlschgd \
     irisConfig \

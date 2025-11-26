@@ -65,3 +65,11 @@ on property:sys.boot_completed=1
     chmod 0600 /mnt/vendor/persist/data/pfm/licenses/2024-01-12_platform_RSA_license_a226ad89-a187-4b14-9447-d20bfe9dac1a.pfm
     chown system system /mnt/vendor/persist/data/pfm/licenses/2024-01-12_platform_RSA_license_a226ad89-a187-4b14-9447-d20bfe9dac1a.pfm
 #endif /* OPLUS_FEATURE_LTM */
+
+#ifdef OPLUS_FEATURE_LTM
+#Weicheng Zhong@MM.Display.Tuning, 2025/03/19, add for SM7675 LTM
+on property:sys.boot_completed=1
+    copy /vendor/etc/2025-03-17_platform_RSA_SM8635_license_a6f644da-0221-4cb4-ab44-a7d8397b3d13.pfm /mnt/vendor/persist/data/pfm/licenses/2025-03-17_platform_RSA_SM8635_license_a6f644da-0221-4cb4-ab44-a7d8397b3d13.pfm
+    chmod 0600 /mnt/vendor/persist/data/pfm/licenses/2025-03-17_platform_RSA_SM8635_license_a6f644da-0221-4cb4-ab44-a7d8397b3d13.pfm
+    chown system system /mnt/vendor/persist/data/pfm/licenses/2025-03-17_platform_RSA_SM8635_license_a6f644da-0221-4cb4-ab44-a7d8397b3d13.pfm
+#endif /* OPLUS_FEATURE_LTM */

@@ -48,7 +48,7 @@ do
 	#ZengHui@CONNECTIVITY.WIFI.HARDWARE.FTM, 2023/05/04,
 	#Add for ftm mode do not probe qca_cld3 ko
 	if [ "$(cat /sys/systeminfo/ftmmode)" == "3" ]; then
-		blocklist_expr+=" -e qca_cld3_kiwi_v2"
+		blocklist_expr+=" -e qca_cld3_kiwi_v2 -e qca_cld3_qca6750"
 	fi
 	#endif /* OPLUS_BUG_STABILITY */
 

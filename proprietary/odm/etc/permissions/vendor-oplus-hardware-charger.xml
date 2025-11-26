@@ -4,5 +4,5 @@
     <library name="vendor.oplus.hardware.charger-V1"
           file="/system_ext/framework/vendor.oplus.hardware.charger-V1-java.jar"/>
     <library name="vendor.oplus.hardware.charger"
-          file="/system_ext/framework/vendor.oplus.hardware.charger-V6-java.jar"/>
+          file="/system_ext/framework/vendor.oplus.hardware.charger-V9-java.jar"/>
 </permissions>
