@@ -16390,7 +16390,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libAlgoProcess.so"],
-			shared_libs: ["android.hardware.graphics.mapper@4.0", "android.hardware.graphics.common-V6-ndk", "libgralloctypes", "libqdMetaData", "vendor.qti.hardware.display.mapper@4.0", "libgralloc.qti", "vendor.qti.hardware.camera.offlinecamera-V1-ndk", "android.hardware.camera.common-V1-ndk", "libbinder_ndk", "libosenseaidlhalclient", "vendor.oplus.hardware.osense.client-V1-ndk", "libion", "libapsjpeg", "libapsexif", "liblog", "libcutils", "libutils", "libutilscallstack", "libmpbase", "libGLESv3", "libEGL", "libnativewindow", "libhidlbase", "libselinux", "libexif-jpeg-aps", "libextendfile", "libalog", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["android.hardware.graphics.mapper@4.0", "android.hardware.graphics.common-V7-ndk", "libgralloctypes", "libqdMetaData", "vendor.qti.hardware.display.mapper@4.0", "libgralloc.qti", "vendor.qti.hardware.camera.offlinecamera-V1-ndk", "android.hardware.camera.common-V1-ndk", "libbinder_ndk", "libosenseaidlhalclient", "vendor.oplus.hardware.osense.client-V1-ndk", "libion", "libapsjpeg", "libapsexif", "liblog", "libcutils", "libutils", "libutilscallstack", "libmpbase", "libGLESv3", "libEGL", "libnativewindow", "libhidlbase", "libselinux", "libexif-jpeg-aps", "libextendfile", "libalog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
