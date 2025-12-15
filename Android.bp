@@ -5494,7 +5494,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libdpps.so"],
-			shared_libs: ["libcutils", "libdisp-aba", "libqdutils", "libutils", "liblog", "libbinder", "libdrm", "libtinyxml2", "libdisplaydebug", "libhidlbase", "android.frameworks.sensorservice@1.0", "libdmabufheap", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcutils", "libdisp-aba", "libqdutils", "libutils", "liblog", "libbinder", "libdrm", "libtinyxml2_1", "libdisplaydebug", "libhidlbase", "android.frameworks.sensorservice@1.0", "libdmabufheap", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -10110,7 +10110,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libsnapdragoncolor-manager.so"],
-			shared_libs: ["liblog", "libcutils", "libutils", "libdisplaydebug", "libsdm-color", "libbinder", "libtinyxml2", "libsdmutils", "libdrm", "libdigital-dimming", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libcutils", "libutils", "libdisplaydebug", "libsdm-color", "libbinder", "libtinyxml2_1", "libsdmutils", "libdrm", "libdigital-dimming", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -18946,7 +18946,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libdisplaycolorfeature.so"],
-			shared_libs: ["liblog", "libcutils", "libutils", "libdisplaydebug", "libbinder", "libsdmutils", "libqservice", "libtinyxml2", "libbinder_ndk", "vendor.oplus.hardware.displaycolorfeature-V1-ndk", "libdisplayfossfeature_nature", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libcutils", "libutils", "libdisplaydebug", "libbinder", "libsdmutils", "libqservice", "libtinyxml2_1", "libbinder_ndk", "vendor.oplus.hardware.displaycolorfeature-V1-ndk", "libdisplayfossfeature_nature", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -18963,7 +18963,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libdisplayfossfeature_nature.so"],
-			shared_libs: ["liblog", "libcutils", "libutils", "libbinder", "libbinder_ndk", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libcutils", "libutils", "libbinder", "libbinder_ndk", "libtinyxml2_1", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -23827,7 +23827,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/qvrdatauploader"],
-			shared_libs: ["libtinyxml2", "liblog", "libqvrservice_client.qti", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libtinyxml2_1", "liblog", "libqvrservice_client.qti", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -24252,7 +24252,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/system_ext/bin/horae"],
-			shared_libs: ["vendor.oplus.hardware.performance-V1-ndk", "liblog", "libcutils", "libcrypto", "libbinder", "libutils", "libhidlbase", "libhidltransport", "libhwbinder", "libbase", "libnl", "android.hardware.health@1.0", "android.hardware.health@2.0", "libbinder_ndk", "vendor.oplus.hardware.charger-V1-ndk", "libprotobuf-cpp-lite", "libostatslog", "android.hardware.health-V1-ndk", "vendor.oplus.hardware.displaypanelfeature@1.0", "vendor.oplus.hardware.displaypanelfeature-V1-ndk", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["vendor.oplus.hardware.performance-V1-ndk", "liblog", "libcutils", "libcrypto", "libbinder", "libutils", "libhidlbase", "libhidltransport", "libhwbinder", "libbase", "libnl", "android.hardware.health@1.0", "android.hardware.health@2.0", "libbinder_ndk", "vendor.oplus.hardware.charger-V1-ndk", "libprotobuf-cpp-lite-21.7", "libostatslog", "android.hardware.health-V1-ndk", "vendor.oplus.hardware.displaypanelfeature@1.0", "vendor.oplus.hardware.displaypanelfeature-V1-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -24391,7 +24391,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/hw/vendor-oplus-hardware-touch-V2-service"],
-			shared_libs: ["libolc_vnd", "android.frameworks.stats-V1-ndk", "vendor.oplus.hardware.touch-V2-ndk", "libbase", "libcutils", "liblog", "libbinder_ndk", "libutils", "libhardware", "libbinder", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libolc_vnd", "android.frameworks.stats-V1-ndk", "vendor.oplus.hardware.touch-V2-ndk", "libbase", "libcutils", "liblog", "libbinder_ndk", "libutils", "libhardware", "libbinder", "libtinyxml2_1", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -24409,7 +24409,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff"],
-			shared_libs: ["libshims_aidl_fingerprint_v3.oplus", "libdmabufheap", "vendor.oplus.hardware.performance-V1-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "libosenseaidlhalclient", "liboplus-uah-client", "libosensenativeproxy_client", "libolc_vnd", "vendor.oplus.hardware.commondcs-V1-ndk", "android.frameworks.stats-V1-ndk", "vendor.oplus.hardware.touch-V1-ndk", "android.hardware.biometrics.fingerprint-V3-ndk", "android.hardware.biometrics.common-V3-ndk", "libbinder", "liblog", "libhidlbase", "libhidltransport", "libcutils", "libbinder_ndk", "libQSEEComAPI", "libion", "libbase", "libsensorndkbridge", "libhardware", "libutils", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libshims_aidl_fingerprint_v3.oplus", "libdmabufheap", "vendor.oplus.hardware.performance-V1-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "libosenseaidlhalclient", "liboplus-uah-client", "libosensenativeproxy_client", "libolc_vnd", "vendor.oplus.hardware.commondcs-V1-ndk", "android.frameworks.stats-V1-ndk", "vendor.oplus.hardware.touch-V1-ndk", "android.hardware.biometrics.fingerprint-V3-ndk", "android.hardware.biometrics.common-V3-ndk", "libbinder", "liblog", "libhidlbase", "libhidltransport", "libcutils", "libbinder_ndk", "libQSEEComAPI", "libion", "libbase", "libsensorndkbridge", "libhardware", "libutils", "libtinyxml2_1", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -24551,7 +24551,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/touchDaemon"],
-			shared_libs: ["libolc_vnd", "vendor.oplus.hardware.touch-V2-ndk", "android.frameworks.stats-V1-ndk", "libcutils", "liblog", "libbase", "libbinder", "libcrypto", "libhwbinder", "libutils", "libbinder_ndk", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libolc_vnd", "vendor.oplus.hardware.touch-V2-ndk", "android.frameworks.stats-V1-ndk", "libcutils", "liblog", "libbase", "libbinder", "libcrypto", "libhwbinder", "libutils", "libbinder_ndk", "libtinyxml2_1", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
