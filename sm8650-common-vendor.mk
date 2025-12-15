@@ -2415,6 +2415,7 @@ PRODUCT_PACKAGES += \
     libthreadutils \
     libtime_genoff \
     libtinyxml2_1 \
+    libtinyxml2_stock \
     libtlpd \
     libtlpd_configmgr \
     libtlpd_crypto \
