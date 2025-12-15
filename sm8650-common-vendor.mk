@@ -2257,8 +2257,6 @@ PRODUCT_PACKAGES += \
     libpdnotifier \
     libperipheral_client \
     libpolygon \
-    libprotobuf-cpp-full-21.7 \
-    libprotobuf-cpp-lite-21.7 \
     libpwirisfeature_vendor \
     libpwirishal \
     libpwirishalwrapper_vendor \
