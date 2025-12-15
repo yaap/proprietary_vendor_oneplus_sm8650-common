@@ -22771,7 +22771,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.contexthub-service.qmi"],
-			shared_libs: ["android.hardware.contexthub-V2-ndk", "libbase-v33", "libbinder_ndk", "liblog", "libsnsapi", "libqmi_cci", "libqmi_common_so", "libqmi_encdec", "libsns_device_mode_stub", "libsns_dynamic_loader_stub", "libpower", "libprotobuf-cpp-lite-21.7", "libsns_remote_proc_state_stub", "libutils", "libjsoncpp", "libcdsprpc", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["android.hardware.contexthub-V2-ndk", "libbase", "libbinder_ndk", "liblog", "libsnsapi", "libqmi_cci", "libqmi_common_so", "libqmi_encdec", "libsns_device_mode_stub", "libsns_dynamic_loader_stub", "libpower", "libprotobuf-cpp-lite-21.7", "libsns_remote_proc_state_stub", "libutils", "libjsoncpp", "libcdsprpc", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
