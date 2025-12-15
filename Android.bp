@@ -18912,7 +18912,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libdisplaycolorfeature.so"],
-			shared_libs: ["liblog", "libcutils", "libutils", "libdisplaydebug", "libbinder", "libsdmutils", "libqservice", "libtinyxml2_1", "libbinder_ndk", "vendor.oplus.hardware.displaycolorfeature-V1-ndk", "libdisplayfossfeature_nature", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libcutils", "libutils", "libdisplaydebug", "libbinder", "libsdmutils", "libqservice", "libtinyxml2", "libbinder_ndk", "vendor.oplus.hardware.displaycolorfeature-V1-ndk", "libdisplayfossfeature_nature", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -18929,7 +18929,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libdisplayfossfeature_nature.so"],
-			shared_libs: ["liblog", "libcutils", "libutils", "libbinder", "libbinder_ndk", "libtinyxml2_1", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libcutils", "libutils", "libbinder", "libbinder_ndk", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
