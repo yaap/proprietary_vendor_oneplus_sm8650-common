@@ -20684,7 +20684,7 @@ prebuilt_rfsa {
 }
 
 prebuilt_rfsa {
-	name: "libQnnSaver",
+	name: "libQnnSaver_adsp",
 	filename: "libQnnSaver.so",
 	owner: "oneplus",
 	src: "proprietary/odm/lib/rfsa/adsp/libQnnSaver.so",

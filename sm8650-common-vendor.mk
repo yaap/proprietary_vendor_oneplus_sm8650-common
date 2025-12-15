@@ -3022,7 +3022,7 @@ PRODUCT_PACKAGES += \
     libCalculator_skel \
     libQnnHtpV75 \
     libQnnHtpV75Skel \
-    libQnnSaver \
+    libQnnSaver_adsp \
     libSnpeHtpV75Skel \
     libSuperRawPost_skel \
     libaisr_skel \
