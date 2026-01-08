@@ -2912,6 +2912,8 @@ PRODUCT_PACKAGES += \
     libcalculator \
     libcalculator_htp \
     libclstc_fod_color \
+    libcreateFDCLitecachebin \
+    libcreateFDCcachebin \
     libcreatebin \
     libcvface_api \
     libdisplayaidlapis \
