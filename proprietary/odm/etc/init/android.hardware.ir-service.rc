@@ -1,5 +1,0 @@
-service vendor.ir-default /odm/bin/hw/android.hardware.ir-service
-    class hal
-    user system
-    group system
-    interface aidl android.hardware.ir.IConsumerIr/default

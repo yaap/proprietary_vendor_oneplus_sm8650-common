@@ -1,4 +1,0 @@
-service commcenterd /odm/bin/commcenterd
-    class main
-    user root
-    group system radio
