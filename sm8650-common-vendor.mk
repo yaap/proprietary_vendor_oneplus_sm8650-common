@@ -443,6 +443,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.bluetooth@1.1-impl-qti \
     android.hardware.gnss-aidl-impl-qti \
+    audio.primary.pineapple \
     com.dsi.ant@1.0-impl \
     libEseUtils \
     libqtigatekeeper \
@@ -501,6 +502,9 @@ PRODUCT_PACKAGES += \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
+    libagm \
+    libar-pal \
+    libarmemlog \
     libaudio_log_utils \
     libaudiofeaturestats \
     libbatching \
@@ -876,6 +880,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.2 \
     vendor.qti.hardware.mwqemadapter@1.0 \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk \
+    vendor.qti.hardware.pal@1.0-impl \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
     vendor.qti.hardware.qccsyshal@1.2_vendor \
@@ -1046,9 +1051,7 @@ PRODUCT_PACKAGES += \
     libQnnHtpV75Skel.unsigned.aiframe \
     android.hardware.secure_element-V1-ndk_odm \
     libGaiaClient_vnd \
-    lib_lvacfs \
     libclstc_fod_color \
-    liblvacfs_wrapper \
     libolc_vnd \
     liboplus_service \
     libosenseaidlhalclient \
