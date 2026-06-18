@@ -2714,23 +2714,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "liblmthermallistner",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/liblmthermallistner.so"],
-			shared_libs: ["liblog", "libcutils", "libbinder_ndk", "libutils", "libthermalclient", "android.hardware.thermal-V1-ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libloadalgo_stub",
 	owner: "oneplus",
 	strip: {
@@ -5906,23 +5889,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libtensorflowlite_c_vendor.so"],
 			shared_libs: ["libm", "liblog", "libdl", "libc", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libthermalclient",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
-			shared_libs: ["libcutils", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -12710,23 +12676,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/tftp_server"],
 			shared_libs: ["libqsocket", "libqrtr", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "thermal-engine-v2",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/thermal-engine-v2"],
-			shared_libs: ["libcutils", "liblog", "libqmi_common_so", "libqmi_cci", "libnl", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
